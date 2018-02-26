@@ -1,0 +1,32 @@
+<section id="stats">
+  {% include title.html data=include.data %}
+  <div id="inner-stats">
+
+    {% assign stats = site.stats | where_exp: 'item', 'item.hide != true'| sort: 'position' %}
+    {% for stat in stats %}
+
+    <div class="stat fade-on">
+      {% if stat.stat-title contains 'date:'%}
+        {% assign date = stat.stat-title | replace: 'date:', ''%}
+        {% assign stat-title = site.time | date: '%Y' | minus: date%}
+      {% elsif stat.stat-title contains 'count:'%}
+        {% assign count = stat.stat-title | replace: 'count:', '' %}
+        {% assign countitems = site[count] | where_exp: 'item', 'item.published != false' %}
+        {% assign countitems = countitems | where_exp: 'item', 'item.joke != true' %}
+        {% assign stat-title = countitems.size %}
+      {% else %}
+        {% assign stat-title = stat.stat-title %}
+      {% endif %}
+      <div class="stat-icon">
+        {% include get-icon.html icon= stat.icon%}
+      </div>
+      <div class="stat-text">
+        <h1>{{stat-title}}</h1>
+        <span>{{stat.stat-description}}</span>
+      </div>
+    </div>
+
+    {% endfor %}
+    <div class="clearfix"></div>
+</div>
+</section>

@@ -1,0 +1,7 @@
+---
+layout: main
+---
+
+{% for section in page.sections %}
+  {% include {{section.section | append: '.html'}} data = section %}
+{% endfor %}

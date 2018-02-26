@@ -1,0 +1,101 @@
+#nav-space, header
+  height: 10em
+
+header
+  z-index: 2
+  width: 100%
+  padding: 3.75em
+  background-color: white
+  background-color: rgba(0,0,0,0)
+  position: absolute
+  left: 0px
+  right: 0px
+  top: 0px
+  display: flex
+  align-items: flex-end
+
+  #nav-logo
+    flex: 0 0 auto
+    margin-right: 2em
+    padding: 0px
+    svg
+      height: 2.5em
+
+  nav
+    flex: 0 0 auto
+    display: flex
+    .nav-link
+      transition: .25s
+      text-transform: uppercase
+      font-weight: 600
+      flex: 0 0 auto
+      opacity: .3
+      font-size: .8em
+      margin-bottom: .2em
+      padding: 0px .8em
+      &:hover, &#active
+        opacity: 1
+        color: $darkGrey
+
+  .social-container
+    flex: 0 1 auto
+    flex-wrap: wrap
+    margin-left: auto
+    display: flex
+    .social
+      transition: opacity .25s
+      flex: 0 0 auto
+      color: $darkGrey
+      opacity: .3
+      font-size: 2em
+      padding: 0px .25em
+      @media screen and (max-width: $tablet + 150px)
+        display: none
+        font-size: 1.5em
+      &:hover
+        opacity: 1
+
+@media screen and (max-width: $tablet)
+  header
+    padding: 2em 0px
+    flex-direction: column
+    align-items: center
+    #nav-logo, nav, .social-container
+      margin: 0px
+    #nav-logo
+      margin-bottom: .2em
+      svg
+        height: 3em
+        max-width: 50vw
+    nav
+      .nav-link
+        padding: .8em .8em 0px
+        @media screen and (max-width: $mobile)
+          padding: .8em .7em 0px
+          font-size: .8em
+
+.fixed-header
+  @media screen and (min-width: $tablet)
+    header
+      animation: slidetop .2s ease
+      position: fixed
+      height: auto
+      padding: $paddingh/6 5em
+      @media screen and (max-width: $desktop)
+        padding: $paddingh/6 $paddingw
+      background: white
+      max-width: $max
+      margin: 0px auto
+      box-shadow: 0px 0px 5px rgba(0,0,0,.1)
+      #nav-logo
+        svg
+          height: auto
+          width: 7em
+      .social-container
+        .social
+          display: inherit
+          font-size: 1.2em
+          padding-left: 1.5em
+          opacity: .3
+          &:hover
+            opacity: 1

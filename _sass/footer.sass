@@ -1,0 +1,134 @@
+footer
+  position: relative
+  bottom: 0px
+  left: 0px
+  background: $c15
+  display: flex
+  flex-direction: row
+  @media screen and (max-width: $mobile)
+    flex-direction: column
+    text-align: center
+
+  #footer-map
+    background: $c20
+    flex: 0 0 $column3
+    padding: $paddingh/1.5 $paddingw
+    @media screen and (max-width: $desktop)
+      flex: 0 0 $column2
+      padding: $paddingh 0px
+    @media screen and (max-width: $tablet)
+      flex: 0 0 $column3
+
+    .footer-page
+      margin: 0px auto 1em
+      width: 120px
+      &:last-of-type
+        margin-bottom: 0px
+      text-decoration: none
+      h3
+        color: white
+        margin: 0px 0px .25em
+
+      span
+        transition: .25s
+        font-size: .9em
+        padding: .1em 0px
+        display: block
+        color: white
+        opacity: .5
+        i
+          font-style: normal
+        &:hover
+          opacity: .8
+
+  #footer-info
+    display: flex
+    flex-wrap: wrap
+    flex: 0 0 $column3*2
+    padding: $paddingh/1.5 $paddingw
+    #footer-info-text
+      flex: 1 1 auto
+      margin-left: 2em
+      span
+        color: white
+        font-size: .9em
+        opacity: .5
+      #footer-address-text
+        display: block
+
+      #footer-phone
+        b
+          margin-right: .5em
+      #footer-email
+        margin-top: .5em
+        span
+          display: block
+      #footer-logo
+        display: block
+        max-width: 15em
+        margin-bottom: .5em
+        svg
+          max-width: 100%
+          max-height: 100%
+          fill: white
+      #footer-social
+        display: flex
+        margin-top: $paddingh/2
+        .social
+          transition: .25s
+          padding: .5em
+          color: white
+          opacity: .2
+          font-size: 2em
+          flex: 0 0
+          &:hover
+            opacity: .5
+          &:first-child
+            padding-left: 0px
+    #footer-icon
+      flex: 0 0 auto
+      position: relative
+      svg
+        transition: .5s
+        width: 8.2em
+        fill: white
+        opacity: .1
+      &.footer-icon-on
+        svg
+          opacity: 1
+          animation: rainbow .5s infinite
+
+    @media screen and (max-width: $desktop)
+      flex: 0 0 $column2
+      padding-right: 0px
+
+    @media screen and (max-width: $tablet + 200px)
+      flex-direction: column
+      padding: $paddingh $paddingw*2
+      #footer-info-text
+        margin-left: 0px
+        margin-top: 2em
+
+    @media screen and (min-width: $tablet)
+      #footer-icon
+        svg
+          &:hover
+            opacity: 1
+            animation: rainbow .5s infinite
+
+    @media screen and (max-width: $tablet)
+      flex: 0 0 $column3*2
+
+    @media screen and (max-width: $mobile)
+      padding: $paddingh 0px
+      flex: 0 0 auto
+      min-height: 100vh
+      #footer-logo
+        margin: 0px auto .5em
+      #footer-social
+        justify-content: center
+        .social
+          padding: .5em !important
+      #footer-icon
+        svg
+          width: 8em

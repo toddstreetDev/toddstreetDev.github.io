@@ -1,0 +1,40 @@
+#stats
+  position: relative
+  padding: 0px $paddingw $paddingh
+  .section-title
+    padding-bottom: 0px
+    h1
+      i
+        color: $blue
+  #inner-stats
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .stat
+      padding: $paddingh $paddingh 0px
+      flex: 0 0 auto
+      width: $column3
+      position: relative
+      .stat-icon
+        text-align: center
+        margin-bottom: .2em
+        svg
+          display: inline
+          width: 50%
+          max-width: 120px
+          fill: $c80
+      .stat-text
+        text-align: center
+        h1
+          margin-bottom: .25em
+      @media screen and (max-width: $tablet)
+        width: $column2
+        .stat-icon
+          svg
+            width: 60%
+      @media screen and (max-width: $mobile)
+        width: $column
+        padding: $paddingh/2 $paddingh/2 0px
+        margin-top: 2em
+        &:first-child
+          margin-top: 0px

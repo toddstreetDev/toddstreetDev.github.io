@@ -1,0 +1,5 @@
+{% for icon in site.icons %}
+  {% if icon.title == {{include.icon}} %}
+    {{icon}}
+  {% endif %}
+{% endfor %}

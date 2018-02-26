@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="" {% if page.background%}style="background-color: {{page.background}}"{% endif%}>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>{{site.title}}</title>
+    <link rel="icon" type="image/png" href="{{ site.baseurl | prepend: site.url }}/uploads/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl | prepend: site.url }}/uploads/favicon-16x16.png" sizes="16x16" />
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700,700i,600,500,400,300|Roboto:300,300i,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="{{site.url | append: site.baseurl}}/styles.css">
+    <script src="https://use.fontawesome.com/e87d3de14e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div id="site-container">
+      <div id="message"></div>
+
+      {% include nav.html %}
+
+      <div id="nav-space"></div>
+
+      {% if page.landing == true %}
+        {% include landing.html %}
+      {% endif %}
+
+      <div id="inner-site-container" {% if page.landing%}class="has-shadow"{% endif %}>
+      {{content}}
+      {% include footer.html %}
+      </div>
+
+    </div>
+    {% if page.landing == true %}
+    <div id="site-background" style="background-image: url({{site.url |append: site.baseurl}}/uploads/cityscape2.png); {% if page.background %}background-color:{{page.background}}{% endif %}"></div>
+    {% endif %}
+    <div id="lightbox">
+      <div class="lightbox-button previous"><i class="fa fa-chevron-left"></i></div>
+      <div class="lightbox-button next"><i class="fa fa-chevron-right"></i></div>
+      <div id="lightbox-bg">
+        <img id="lightbox-image" src="#" alt="">
+      </div>
+    </div>
+    <script type="text/javascript">$('html').addClass('js')</script>
+    <script src="{{site.url | append: site.baseurl}}/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{% assign links = site.pages | where_exp: 'link', 'link.nav' | sort: 'nav' %}
+
+<header class="slidetop">
+  <a id="nav-logo" href="{{site.url | append: site.baseurl}}/">{% include get-icon.html icon="logo" %}</a>
+  <nav>
+    {% for link in links %}
+      <a class="nav-link" {% if link.url == page.url %}id="active"{% endif %} href="{{site.url | append: site.baseurl}}{{link.url}}{% if link.landing == true %}#no-landing{% endif %}">{{link.title}}</a>
+
+    {% endfor %}
+  </nav>
+  <div class="social-container">
+  {% include social.html %}
+  </div>
+</header>

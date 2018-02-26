@@ -1,0 +1,32 @@
+#work-categories
+  padding: 2em 10%
+  text-align: center
+  background: $darkBlue
+  //box-shadow: 0px 0px 5px rgba($grey,.2)
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  @media screen and (max-width: $tablet )
+    padding: 1em
+  @media screen and (max-width: $mobile )
+    flex-direction: column
+  .work-category
+    flex: 1 0 $column3
+    color: lighten($darkBlue, 50%)
+    font-weight: 300
+    font-size: 1.3em
+    letter-spacing: .02em
+    //text-transform: uppercase
+    padding: .2em
+    @media screen and (max-width: $desktop )
+      font-size: 1.1em
+    @media screen and (max-width: $tablet )
+      font-size: 1.3em
+  .work-category-seperator
+    border-left: 1px solid lighten($darkBlue, 20%)
+    margin: 0px .5em
+    @media screen and (max-width: $mobile )
+      border-left: none
+      border-top: 1px solid lighten($darkBlue, 20%)
+      margin: .7em auto
+      width: 60vw

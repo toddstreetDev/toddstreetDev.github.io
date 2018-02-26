@@ -1,0 +1,22 @@
+{% assign jobs = site.work | where_exp: 'item', 'item.overview' | sort: 'overview' %}
+
+{% if include.data.work-categories == true %}
+{% include work-categories.html %}
+{% endif %}
+
+<section id="overview">
+
+  {% for job in jobs %}
+
+  {% include job.html job=job h1=job.header h3=job.work-category %}
+
+  {% endfor %}
+  <a class="overview-button job-container" href="{{site.url | append: site.baseurl}}{{include.data.button-link}}" style="background-image: url({{site.url | append: site.baseurl}}/uploads/icons.svg)">
+    <div class="button-content-container">
+      <div class="button-content">
+        <h2>{{include.data.button-text}}<i class="fa fa-arrow-right"></i></h2>
+      </div>
+    </div>
+  </a>
+  <div class="clearfix"></div>
+</section>

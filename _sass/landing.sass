@@ -1,0 +1,44 @@
+#landing
+  box-shadow: none
+  background-color: rgba(0,0,0,0)
+  position: relative
+  height: 100vh
+  padding-top: 0px
+  padding-bottom: 0px
+  text-align: center
+  &.mobile-padding
+    height: calc(100vh - 69px)
+
+  #landing-text
+    position: relative
+    height: 50%
+    #inner-landing-text
+      position: absolute
+      padding: 2em
+      top: 50%
+      left: 0px
+      right: 0px
+      transform: translateY(-50%)
+    h1
+      display: none
+      letter-spacing: .05em
+      &:first-child
+        font-size: 1.2em
+        color: $blue
+      margin: 0px
+      &:last-child
+        font-size: 2em
+
+  #viewfinder
+    position: absolute
+    bottom: 0px
+    left: 0px
+    right: 0px
+    max-width: 50%
+    max-height: 40%
+    margin: auto
+    z-index: 0
+    @media screen and (max-width: $tablet)
+      max-width: 70%
+    @media screen and (max-width: $mobile)
+      max-width: 80%

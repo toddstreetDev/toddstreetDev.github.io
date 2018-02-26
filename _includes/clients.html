@@ -1,0 +1,17 @@
+<section id="clients">
+  {% include title.html data=include.data %}
+  <div id="inner-clients">
+    {% assign clients = site.clients | where_exp: 'item', 'item.published !=false' | sort: 'position'%}
+    {% for client in clients %}
+
+    {% assign hasCode = client.content | strip_newlines %}
+
+    {% unless hasCode == '' %}
+    <div class="client fade-on">
+      {{client}}
+    </div>
+    {% endunless %}
+    {% endfor %}
+    <div class="clearfix"></div>
+  </div>
+</section>

@@ -1,0 +1,98 @@
+---
+title: toddstreet website
+timezone: America/New_York
+collections:
+  employees:
+    title: Employees
+    output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: false
+  blog-posts:
+    title: blog-posts
+    output: false
+  clients:
+    title: clients
+    output: false
+  departments:
+    title: departments
+    output: false
+  icons:
+    title: icons
+    output: false
+  offerings:
+    title: offerings
+    output: false
+  sections:
+    title: sections
+    output: false
+  stats:
+    title: stats
+    output: false
+  work:
+    title: work
+    output: true
+  work-categories:
+    title: work-categories
+    output: false
+defaults:
+- scope:
+    path: ''
+    type: stats
+  values:
+    icon:
+    stat-title:
+    stat-description:
+- scope:
+    path: ''
+    type: employees
+  values:
+    role:
+    image:
+    department:
+- scope:
+    path: ''
+    type: work
+  values:
+    layout: job
+    title:
+    header:
+    work-category:
+    color:
+    overview: false
+    cover-image:
+    images:
+    - row:
+      - file:
+- scope:
+    path: ''
+    type: blog-posts
+  values:
+    overview:
+    images:
+- scope:
+    path: ''
+    type: work-overview
+  values:
+    work:
+    -
+email: smetcalf@toddstreet.com
+address: 30 West 24th Street, 11th Floor
+city: Manhattan
+state: New York
+zip: 10011
+telephone: 212.966.5900
+emails:
+- contact@toddstreet.com
+- hr@toddstreet.com
+description: 'Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description. '
+plugins:
+- jekyll-tidy
+sass:
+  style: nested
+markdown: kramdown

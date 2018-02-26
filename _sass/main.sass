@@ -1,0 +1,230 @@
+html, body
+  margin: 0px
+  padding: 0px
+  height: 100%
+  width: 100%
+
+html
+  background-color: $c100
+  overflow-y: scroll
+  font-family: 'PT Sans', sans-serif
+  color: #222
+
+*
+  box-sizing: border-box
+
+#lightbox
+  display: none
+  overflow: auto
+  max-height: 100vh
+  max-width: 100vw
+
+.js
+  .fade-on
+    opacity: 0
+  .mobile-cancel-fade
+    @media screen and (max-width:$tablet)
+      opacity: 1 !important
+
+.lightbox-on
+  #lightbox
+    display: block
+    .lightbox-button
+      z-index: 10001
+      position: fixed
+      padding: 1em
+      top: 50%
+      transform: translateY(-50%)
+      transform-origin: center center
+      cursor: pointer
+      color: white
+      font-size: 2em
+      @media screen and (max-width:$tablet)
+        font-size: 1.3em
+      i
+        opacity: .5
+        transition: .25s
+      &:hover
+        @media screen and (min-width:$tablet)
+          i
+            opacity: 1
+            transform: scale(1.2)
+      &.previous
+        left: 0px
+      &.next
+        right: 0px
+    #lightbox-bg
+      position: fixed
+      top: 0px
+      left: 0px
+      z-index: 9999
+      height: 100%
+      width: 100%
+      background: rgba(0,0,0,.95)
+      text-align: center
+
+      #lightbox-image
+        display: block
+        position: relative
+        margin: auto
+        top: 50%
+        transform: translateY(-50%)
+        max-width: 80vw
+        max-height: 90vh
+        @media screen and (max-width:$tablet)
+          max-width: 70vw
+
+
+
+#site-background
+  background-size: cover
+  background-position: center bottom
+  height: 100vh
+  position: fixed
+  top: 0px
+  left: 0px
+  right: 0px
+  bottom: 0px
+  z-index: -1
+  opacity: 0
+
+a
+  text-decoration: none
+  color: #222
+
+#message
+  position: fixed
+  top: 0px
+  left: 0px
+  right: 0px
+  z-index: 10000
+  background: yellow
+
+section
+  position: relative
+  z-index: 1
+  background-color: #fff
+
+#site-container
+  max-width: $max
+  margin: 0px auto
+  min-height: 100vh
+  position: relative
+
+//#inner-site-container
+  &.has-shadow
+    box-shadow: 0px 0px 2px rgba(0,0,0,.1)
+
+.clearfix
+  clear: both
+
+span, p, li
+  font-family: 'Roboto', sans-serif
+  font-weight: 300
+  font-size: 1em
+span, p
+  line-height: 1.6
+
+h1
+  font-size: 2.8em
+  //text-transform: uppercase
+  margin: 0px 0px .5em
+  letter-spacing: .01em
+  @media screen and (max-width: $tablet)
+    font-size: 2em
+
+.hidden
+  display: none !important
+
+.bg-spacer
+  height: $paddingh/2
+  background: $c100
+
+.center
+  text-align: center
+
+.center-margin
+  margin: 0px auto
+
+.max-text
+  max-width: 700px
+  margin-left: auto
+  margin-right: auto
+
+.middle-centered
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+
+.button-wrapper
+  padding: $paddingh 0px
+  .button
+    border: none
+    outline: none
+    transition: .25s
+    display: block
+    width: 15em
+    padding: 1.3em
+    margin: 0px auto
+    background: $red
+    color: white
+    font-weight: 700
+    border-radius: .5em
+    text-align: center
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0)
+    font-size: 1.2em
+    &:hover
+      @media screen and (min-width: $tablet)
+        transform: scale(1.05)
+        box-shadow: 0px 0px 50px rgba(0,0,0,.1)
+    @media screen and (max-width: $mobile)
+      width: 100%
+
+
+textarea,input
+  -webkit-appearance: none
+  border-radius: 0
+
+.red
+  color: $red
+
+#thanks
+  padding: 0px
+  height: calc(100vh - 10em)
+  min-height: 300px
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  #inner-thanks
+    flex: 0 0 auto
+    margin-bottom: 1em
+    @media screen and (max-width: $mobile)
+      margin-bottom: 5em
+    h3
+      display: inline-block
+      font-size: 2em
+      font-weight: 800
+      margin: 0px
+      @media screen and (max-width: $mobile)
+        font-size: 1.5em
+      @media screen and (max-height: $mobile)
+        font-size: 1.5em
+    #thanks-icon
+      display: block
+      margin-bottom: 2em
+      @media screen and (max-width: $mobile)
+        margin: 0px
+      svg
+        width: 300px
+        max-width: 50vw
+        max-height: 40vh
+        fill: none
+        stroke: $c20
+        stroke-width: 2px
+        animation: shake 3s ease
+        .ping
+          stroke: none
+          fill: $red
+          animation: appear 2s ease

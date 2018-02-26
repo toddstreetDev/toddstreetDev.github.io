@@ -1,0 +1,18 @@
+<section id="offerings">
+  {% include title.html data=include.data %}
+  <div id="inner-offerings">
+    {% assign offerings = site.offerings %}
+    {% for offering in offerings %}
+    <div class="offer-box">
+      <div class="offer-title fade-on">
+        {{offering.title}}
+      </div>
+      <ul class="offer-text">
+        {% for item in offering.offers %}
+        <li class="offer fade-on">{{item}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>

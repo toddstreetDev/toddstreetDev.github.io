@@ -1,0 +1,20 @@
+{% assign jobs = site.work | where_exp: 'item', 'item.overview' | sort: 'overview' %}
+
+<section id="overview">
+  <div class="overview-title">
+    <div>
+      <h1>{{include.data.title}}</h1>
+    </div>
+  </div>
+  {% for job in jobs %}
+
+  {% include job.html job=job h1=job.title h3=job.work-category %}
+
+  {% endfor %}
+  <div class="clearfix"></div>
+  <div class="button-wrapper overview-button">
+    <a href="{{site.url | append: site.baseurl}}{{include.data.button-link}}" class="button">
+      {{include.data.button-text}}
+    </a>
+  </div>
+</section>

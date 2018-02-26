@@ -1,0 +1,17 @@
+<a {% if include.cat %} data-category="{{include.cat}}" {% endif %} href="{{site.url | append: site.baseurl}}{{include.job.url}}" class="job-container">
+
+  <div class="job-cover" style="background-image: url({{site.url | append: site.baseurl}}{{include.job.cover-image}})"></div>
+
+  <div class="job-text-container">
+    {% if include.tag %}
+    <div class="job-tag">{{include.tag}}</div>
+    {% endif %}
+    <div class="job-text-inner-container middle-centered">
+      {% if include.h3 %}<h2>{{include.h3}}</h2>{% endif %}
+      {% if include.h1 %}<h1>{{include.h1}}</h1></i></i>{% endif %}
+      <h3>view</h3>
+    </div>
+    <div class="job-text-color" {% if include.job.color %} style="background-color: {{include.job.color}}"{% endif %}></div>
+  </div>
+
+</a>

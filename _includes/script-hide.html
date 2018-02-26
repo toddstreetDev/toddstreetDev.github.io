@@ -1,0 +1,10 @@
+<script type="text/javascript">
+    var hash = window.location.hash
+    if (hash == '{{include.data.hash}}'){
+      {% for id in include.data.ids %}
+        $('#{{id}}').remove()
+      {% endfor %}
+    } else {
+      $('#nav-space').css({display: "none"})
+    }
+</script>

@@ -1,0 +1,43 @@
+<footer>
+  <div id="footer-map">
+  {% assign navpages = site.pages | where-exp: 'item', 'item.nav' | sort: 'nav' %}
+    {% for page in navpages %}
+    {%  if page.sections %}
+    <div class="footer-page">
+      <a href="{{site.url | append: site.baseurl}}{{page.url}}">
+        <h3>{{page.title}}</h3>
+      </a>
+        {% for section in page.sections %}
+        {% if section.site-map %}
+          <a href="{{site.url | append: site.baseurl}}{{page.url}}#{{section.section}}">
+            <span>{{section.title}}</span>
+          </a>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div id="footer-info">
+    <div id="footer-icon">{% include get-icon.html icon="viewfinder"%}</div>
+    <div id="footer-info-text">
+      <div id="footer-logo">{% include get-icon.html icon="logo"%}</div>
+      <div id="footer-address">
+        <span id="footer-address-text">{{site.address}}</span>
+        <span id="footer-city-text">{{site.city}}</span>
+        <span id="footer-city-text">{{site.state}}</span>
+      </div>
+      <div id="footer-phone">
+        <span>{{site.telephone}}</span>
+      </div>
+      <div id="footer-email">
+        {% for email in site.emails %}
+        <span>{{email}}</span>
+        {% endfor %}
+      </div>
+      <div id="footer-social">
+        {% include social.html %}
+      </div>
+    </div>
+  </div>
+</footer>

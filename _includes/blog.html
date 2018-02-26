@@ -1,0 +1,53 @@
+
+
+<section id="blog" {% if include.data.overview == true %}class="blog-overview"{% endif %}>
+
+{% include title.html data=include.data %}
+
+{% if include.data.overview == true %}
+{% assign posts = site.blog-posts | where: 'overview', 'true' %}
+{% else %}
+{% assign posts = site.blog-posts %}
+{% endif %}
+  {% for post in posts %}
+  <div class="post-container fade-on mobile-cancel-fade{% if forloop.last %} last{% endif %}">
+    {% if post.cover-image %}
+    <div class="post-image-container" style="background-image: url({{site.url |append: site.baseurl}}{{post.cover-image}})"></div>
+    {% else %}
+    <div class="post-image-container" style="background-image: url({{site.url |append: site.baseurl}}/uploads/toddstreet_cover.jpg)"></div>
+    {% endif %}
+    <div class="post-text-container">
+      <h2 class="post-title">{{post.title}}</h2>
+
+      <div class="post-preview">
+        <div class="post-text">{{post | truncatewords: 10 }}</div>
+        <div class="post-open post-button">Read More</div>
+      </div>
+
+      <div class="post-full">
+        <div class="post-text">{{post}}</div>
+
+        {% if post.images.size > 1 %}
+        <div class="post-images">
+          {% for image in post.images %}
+            <div class="post-image" style="background-image: url({{site.url | append: site.baseurl}}{{image}})"></div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="post-close post-button">Close</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  <div class="clearfix"></div>
+
+  {% if include.data.button-link %}
+  <div class="button-wrapper blog-button">
+    <a href="{{site.url | append: site.baseurl}}{{include.data.button-link}}" class="button">
+      {{include.data.button-text}}
+    </a>
+  </div>
+
+  {% endif %}
+</section>

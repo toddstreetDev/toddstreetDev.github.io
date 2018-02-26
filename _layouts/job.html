@@ -1,0 +1,53 @@
+---
+layout: main
+---
+
+{% assign content = page.content | strip_newlines %}
+
+<section id="job">
+
+  <div id="job-intro" class="job-section{% unless content == '' %} has-description{% endunless%}">
+      {% unless content == '' %}
+      <div id="job-intro-image" style="background-image: url({{site.url | append: site.baseurl}}{{page.cover-image}})"></div>
+      {% endunless %}
+      <div id="job-intro-text">
+          <h3 style="color: {{page.color}}">{{page.work-category }}</h3>
+        <h1>{{page.header}}</h1>
+        {% unless content == '' %}
+        <div id="job-intro-description">
+          {{content | markdownify }}
+        </div>
+        {% endunless %}
+      </div>
+  </div>
+  <div id="job-images" class="job-section">
+    {% for row in page.images %}
+    <div class="job-images-row">
+      {% for image in row.row %}
+
+        {% if image.file contains 'youtube.com' %}
+        <div class="job-image row-video">
+          <div class="job-video-padding">
+            <iframe src="{{image.file}}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        {% elsif image.file contains 'wistia.com' %}
+        <div class="job-image row-video">
+          {{image.file}}
+        </div>
+        {% elsif image.laptop %}
+        <div class="job-image row-laptop">
+          {% include laptop.html image= image.laptop %}
+        </div>
+        {% else  %}
+        <div class="job-image row-image">
+          <img class="image" src="{{ site.url |append: site.baseurl }}{{image.file}}" alt="">
+        </div>
+        {% endif %}
+
+      {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+
+</section>

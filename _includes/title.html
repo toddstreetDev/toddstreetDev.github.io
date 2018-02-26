@@ -1,0 +1,22 @@
+<div class="section-title">
+  {% if include.data.title %}
+    <h1 class="fade-on">{{include.data.title}}</h1>
+  {% endif %}
+
+  {% if include.data.description %}
+  <div class="section-description fade-on">
+    {% if include.data.description.quote %}
+    <div class="quote-text">
+      {% include get-icon.html icon="quote" %}
+      <span>{{include.data.description.quote.text | markdownify}}</span>
+      {% include get-icon.html icon="quote" %}
+    </div>
+      {% if include.data.description.quote.from  %}
+      <span class="quote-from">{{include.data.description.quote.from}}</span>
+      {% endif %}
+    {% else %}
+      <span>{{include.data.description | markdownify}}</span>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>

@@ -1,0 +1,66 @@
+---
+layout: main
+---
+
+{% assign content = page.content | strip_newlines %}
+
+<section id="job">
+  <div class="job-info-container">
+  {% unless content == '' %}
+    <div class="job-info-image" style="background-image: url({{site.url | append: site.baseurl}}{{page.cover-image}})"></div>
+  {% endunless %}
+    <div class="job-info{% if content == ''  %} no-description{% endif %}">
+
+      {% if page.hide-client == true %}
+        <h3 style="color:{{page.color}}">{{page.work-category}}</h3>
+      {% else %}
+        <h3 style="color:{{page.color}}">{{page.client}}</h3>
+      {% endif %}
+
+      <h1>{{page.title}}</h1>
+      {% unless content == '' %}<span>{{content}}</span>{% endunless %}
+    </div>
+  </div>
+  {% if page.stats %}
+    <div class="job-stats" style="background:{{page.color}}">
+      <h1>Stats</h1>
+      <span>{{page.stats}}</span>
+    </div>
+  {% else %}
+  {% unless content == '' %}<div class="bg-spacer{% unless page.stats %} bg-spacer-mobile-collapse{% endunless %}"></div>
+  {% endunless %}
+  {% endif %}
+  <div class="job-image-container">
+    {% if page.images.size > 0 %}
+
+      {% for image in page.images %}
+
+        {% if image.laptop %}
+          {% include laptop.html image = image.laptop %}
+
+        {% elsif image.video %}
+          {% include video.html video = image.video %}
+
+        {% elsif image.half %}
+        <div class="job-item col2">
+          <img class="image" src="{{site.url | append: site.baseurl}}{{image.half}}" alt="">
+        </div>
+
+        {% else %}
+        <div class="job-item col1">
+          <img class="image" src="{{site.url | append: site.baseurl}}{{image}}" alt="">
+        </div>
+
+        {% endif %}
+
+      {% endfor %}
+
+    {% else %}
+
+      {% if content=='' %}
+      <img src="{{site.url | append: site.baseurl}}{{page.cover}}" alt="">
+      {% endif %}
+    {% endif %}
+    <div class="clearfix"></div>
+  </div>
+</section>

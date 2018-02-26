@@ -1,0 +1,68 @@
+#offerings
+  background: $c30
+  color: white
+  .section-title
+    i
+      color: $yellow
+  #inner-offerings
+    padding: 0px 0px $paddingh
+    display: flex
+    flex-wrap: nowrap
+    @media screen and (max-width: $tablet + 200px)
+      flex-direction: column
+    .offer-box
+      flex: 0 0 $column3
+
+  $border-color: rgba(255,255,255,.15)
+
+  .offer-box
+    flex: 0 0 $column3
+    padding: 0px $paddingw
+    border-right: 1px solid $border-color
+    &:last-child
+      border: none
+    @media screen and (max-width: $desktop + 200px)
+      padding: 0px $paddingw/1.5
+    @media screen and (max-width: $tablet + 200px)
+      padding: $paddingh/2 $paddingw
+      border: none
+      text-align: center
+      &:first-child
+        padding-top: 0px
+      &:last-child
+        border: none
+        padding-bottom: 0px
+    @media screen and (max-width: $mobile)
+      padding: 0px $paddingw*2 $paddingh/1.5
+      border: none
+
+    .offer-title
+      font-size: 1.8em
+      font-weight: 700
+      margin-bottom: 1em
+      @media screen and (max-width: $tablet + 200px)
+        margin-bottom: .5em
+      @media screen and (max-width: $mobile)
+        font-size: 1.6em
+
+    .offer-text
+      padding: 0px
+      margin: 0px
+      margin-top: $paddingh/4 $paddingw/4
+
+      .offer
+        list-style: none
+        margin: .7em 0px
+        font-size: 1em
+        font-weight: 300
+        line-height: 1.3em
+        @media screen and (max-width: $tablet + 200px)
+          margin: .5em .25em
+          background: rgba(255,255,255,.1)
+          border-radius: .5em
+          display: inline-block
+          padding: .5em .7em
+        @media screen and (max-width: $mobile)
+          font-size: .9em
+          line-height: 1em
+          margin: .3em .15em

@@ -1,0 +1,18 @@
+{% assign stop = false %}
+
+<section id="work">
+  {% for cat in site.work-categories %}
+    {% assign work = site.work | where: 'work-category', cat.title | sort: 'position' %}
+    {% if work.size > 0 %}
+    <div class="work-title">
+      <h1>{{cat.title}}</h1>
+    </div>
+    <div class="work-category">
+      {% for job in work %}
+        {% include job.html job=job h1=job.title h3=job.client %}
+      {% endfor %}
+      <div class="clearfix"></div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</section>

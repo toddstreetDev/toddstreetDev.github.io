@@ -1,0 +1,107 @@
+#blog
+  padding: 0px $paddingw $paddingh
+  .section-title
+    i
+      color: $red
+  .post-container
+    max-width: 850px
+    margin: 0px auto 1em
+    padding: 3em
+    display: flex
+    flex-direction: row
+    @media screen and (max-width: $tablet)
+      padding: 2em
+    @media screen and (max-width: $mobile)
+      flex-direction: column
+      padding: $paddingw*2
+    border-radius: .8em
+    border: 1px solid $c90
+    overflow: hidden
+    font-family: 'Roboto', san-serif
+    color: $c20
+    &.last
+      margin-bottom: 0px
+    .post-image-container
+      flex: 0 0 auto
+      width: 120px
+      height: 120px
+      background-size: cover
+      background-position: center top
+      background-repeat: no-repeat
+      border-radius: .5em
+      margin-right: 1.5em
+
+      @media screen and (max-width: $mobile)
+        width: 0px
+        height: 0px
+        padding: 50%
+        margin: none
+        margin-bottom: 1em
+    .post-text-container
+      flex: 1 1 auto
+    h2
+      font-family: 'PT Sans', san-serif
+      font-weight: 700
+      max-width: 800px
+      margin-top: 0px
+      line-height:  1.1em
+      @media screen and (max-width: $mobile)
+        font-size: 1.3em
+    a
+      color: $red
+      font-weight: 600
+      font-style: italic
+    p
+      font-weight: 300
+      font-size: 1.1em
+      line-height: 1.6
+      @media screen and (max-width: $mobile)
+        font-size: .9em
+
+    .post-button
+      cursor: pointer
+      font-weight: 500
+      padding: .5em 1em
+      border-radius: .5em
+      background: $c80
+      color: White
+      display: inline-block
+      margin-top: .2em
+      font-size: .8em
+    .post-full
+      display: none
+      .post-images
+        display: flex
+        flex-wrap: wrap
+        margin: $paddingh/2 0px
+        .post-image
+          flex: 1 1 auto
+          width: 100%
+          margin: .5em 0px
+          height: 300px
+          max-height: 50vh
+          background-position: center center
+          background-size: cover
+    &.open-post
+      .post-full
+        display: block
+      .post-preview
+        display: none
+  &.blog-overview
+    padding-bottom: 0px
+    .section-title
+      i
+        color: $yellow
+    .blog-button
+      @media screen and (max-width: $mobile)
+        width: 100%
+        margin-left: 0px
+        margin-right: 0px
+        a
+          width: 100%
+      a
+        background: $yellow
+    .post-container
+      background: white
+      a
+        color: $blue

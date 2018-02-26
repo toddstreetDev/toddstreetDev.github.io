@@ -1,0 +1,126 @@
+#form
+  position: relative
+  padding: 0px $paddingw
+  background-size: cover
+  .section-title
+    i
+      color: $red
+  form
+    border-top: 1px solid $c90
+    padding-top: $paddingh
+    @media screen and (max-width:$mobile)
+      border: none
+      padding: 0px
+  #form-inner-container
+    display: flex
+    flex-direction: row
+    @media screen and (max-width:$desktop)
+      flex-direction: column
+    .form-section
+      padding: 0px
+      padding-left: $paddingh
+      position: relative
+      display: flex
+      flex-direction: column
+      &:first-child
+        padding-left: 0px
+      @media screen and (max-width:$desktop)
+        padding-left: 0px
+      @media screen and (max-width:$mobile)
+        padding: 0px
+      &.info
+        flex: 0 0 $column3
+        @media screen and (max-width:$desktop)
+          margin-bottom: $paddingh
+          flex-direction: row
+        @media screen and (max-width:$mobile)
+          flex-direction: column
+      &.form
+        flex: 0 0 $column3*2
+
+    .form-title
+      line-height: normal
+      font-size: 1em
+      font-weight: 700
+      font-family: 'PT sans', sans-serif
+      padding: .25em 0px
+      i
+        color: $red
+        margin-left: .25em
+      @media screen and (max-width:$mobile)
+        font-size: 1em
+      &.telephone
+        margin: 0px 0px 1em
+      &.no-margin, &:first-child
+        margin: 0px
+      &.margin
+        margin: 2em 0px 0px
+      &.question
+        flex: 0 0 100%
+      &.address, &.city, &.email
+        padding-bottom: 0px
+      &.icon
+        width: 40%
+        margin-bottom: 1em
+
+    input, textarea
+      font-size: 1em
+      border: 1px solid $c80
+      display: block
+      resize: vertical
+      padding: .5em
+      margin: .25em 0px
+      @media screen and (max-width:$mobile)
+        flex: 0 1 100% !important
+        margin: .25em 0px !important
+    textarea
+      width: 100%
+
+    input
+      width: $column2
+      @media screen and (max-width:$tablet)
+        width: 100%
+      &.button
+        font-size: 1.3em
+      &.answer
+        outline: none
+        width: auto
+        flex: 1 1 $column3
+        margin: .25em
+        border-radius: .5em
+        &:hover
+          background: $c105
+          color: black
+        &.active-answer
+          background: $c20
+          border-color: $c20
+          color: white
+
+    .form-row
+      flex: 0 0 auto
+      position: relative
+      &.answers
+        display: flex
+        flex-wrap: wrap
+        margin: .25em -.25em
+        @media screen and (max-width:$mobile)
+          margin: .25em 0px
+      &.map
+        flex: 1 1 auto
+        margin-bottom: 2em
+        @media screen and (max-width:$desktop)
+          margin-bottom: 0px
+          margin-right: 2em
+          height: 300px
+          flex: 0 0 50%
+        @media screen and (max-width:$mobile)
+          margin-bottom: 2em
+          margin-right: 0px
+          flex: 1 1 auto
+      &.info
+        .form-title
+          display: block
+          @media screen and (max-width:$mobile)
+            text-align: center
+
+//AIzaSyAx1H-G1H7aPF2HbTD0A2vTWFnacM0JJJY

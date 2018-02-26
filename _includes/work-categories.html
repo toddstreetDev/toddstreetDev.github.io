@@ -1,0 +1,11 @@
+<section id="work-categories">
+  {% assign categories = site.work-categories | sort: 'order'%}
+  {% for category in categories %}
+
+    <div class="work-category">{{category.title}}</div>
+    {% unless forloop.last %}
+    <div class="work-category-seperator"></div>
+    {% endunless %}
+
+  {% endfor %}
+</section>

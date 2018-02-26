@@ -1,0 +1,23 @@
+#work
+  //min-height: 100vh
+  .work-title
+    text-align: center
+    padding: $paddingh/2 $paddingw
+    display: none
+    width: 100%
+    background: $c100
+    h1
+      margin: 0px
+      padding: 0px
+      color: black
+      @media screen and (max-width: $mobile)
+        font-size: 1.8em
+  .work-container
+    .job-container, .overview-title
+      height: 350px
+      width: calc(100%/3)
+      @media screen and (max-width: $desktop + 100px)
+        padding: $column3/2 $column4
+      @media screen and (max-width: $tablet)
+        @media screen and (min-height: 400px)
+          padding: $column2/1.5 $column2

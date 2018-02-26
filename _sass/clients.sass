@@ -1,0 +1,41 @@
+#clients
+  padding: 0px $paddingw $paddingh/4
+  @media screen and (max-width: $mobile)
+    padding: 0px $paddingw*1.5 $paddingh/2
+  background: $c20
+  position: relative
+  .section-title
+    color: white
+    i
+      color: $red
+  #inner-clients
+    .client
+      float: left
+      padding: $column4/4 $column6/2
+      position: relative
+      @media screen and (max-width: $desktop + 100px)
+        padding: $column4/4 $column5/2
+      @media screen and (max-width: $tablet)
+        padding: $column4/2 $column4/2
+      @media screen and (max-width: $mobile)
+        padding: $column4/2 $column3/2
+        margin: 0px 0px 2em
+      svg
+        transition: fill .25s
+        position: absolute
+        top: 0%
+        left: 20%
+        bottom: 50%
+        right: 20%
+        width: 60%
+        height: 50%
+        fill: $c50
+        &:hover
+          fill: $c60
+        @media screen and (max-width: $mobile)
+          top: 0%
+          left: 22%
+          bottom: 20%
+          right: 22%
+          width: 56%
+          height: 80%

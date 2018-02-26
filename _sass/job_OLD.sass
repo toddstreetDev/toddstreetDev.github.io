@@ -1,0 +1,210 @@
+
+.job-container
+  max-height: 80vh
+  &.hide-job
+    display: none
+  float: left
+  position: relative
+  height: 0px
+  width: 0px
+  overflow: hidden
+  &:hover
+    @media screen and (min-width: $tablet)
+      .job-cover
+        transform: scale(1.2)
+      .job-text-container
+        opacity: 1
+        .job-tag
+          transform: translateX(0px)
+        .job-text-inner-container
+          h1
+            transform: translateY(0px)
+            opacity: 1
+  .job-cover, .job-text-container, .job-text-color
+    position: absolute
+    top: -5px
+    left: -5px
+    right: -5px
+    bottom: -5px
+  .job-cover
+    transition: .25s
+    background-size: cover
+    background-position: center center
+    transform: scale(1)
+
+  .job-text-container
+    transition: .25s
+    @media screen and (max-width: $tablet)
+      transition: .35s
+    opacity: 0
+    color: white
+    text-align: center
+    &.fade-in
+      @media screen and (max-width: $tablet)
+        opacity: 1
+
+    .job-text-color
+      z-index: 0
+      background: $darkGrey
+      opacity: .8
+      @media screen and (max-width: $tablet)
+        background: $darkGrey !important
+
+    .job-text-inner-container
+      z-index: 1
+      position: absolute
+      padding: 3em
+      left: 0px
+      right: 0px
+      h2
+        margin-top: 0px
+        font-weight: 400
+        font-size: 1em
+
+      h1
+        font-size: 1.8em
+        transition: .25s
+        margin-bottom: 0px
+        @media screen and (min-width: $tablet)
+          transform: translateY(50px)
+        @media screen and (max-width: $desktop)
+          font-size: 1.4em
+
+      h3
+        transition: .25s
+        opacity: .6
+        font-size: .9em
+        line-height: 1em
+        margin: 0px
+        margin-top: 2em
+        padding: .5em 1em
+        border-radius: .5em
+        border: 1px solid white
+        display: inline-block
+        &:hover
+          @media screen and (min-width: $tablet)
+            opacity: 1
+
+#job
+  position: relative
+  @media screen and (max-width: $desktop)
+    .bg-spacer-mobile-collapse
+      height: 0px
+  .job-info-container
+    display: flex
+    flex-direction: row
+    @media screen and (max-width: $desktop)
+      flex-direction: column
+    .job-info-image
+      background-position: center center
+      background-size: cover
+      padding: $column2/2
+      flex: 0 0 auto
+      @media screen and (max-width: $mobile)
+        padding: $column/2
+    .job-info
+      flex: 1 1 auto
+      padding: $paddingh $paddingw
+      h1
+        margin-bottom: 1em
+      h3
+        margin-top: 0px
+        margin-bottom: .5em
+      @media screen and (max-width: $mobile)
+        padding: $paddingh/2 $paddingw
+        h1
+          font-size: 1.5em
+        h3
+          font-size: .9em
+      &.no-description
+        text-align: center
+        h1
+          margin-bottom: 0px
+
+  .job-image-container
+    position: relative
+    padding: 0px $paddingw $paddingh
+    @media screen and (max-width: $mobile)
+      padding: 0px
+    .job-item
+      margin: 1em 0px
+      max-width: 100%
+      position: relative
+      @media screen and (max-width: $mobile)
+        margin: .5em 0px
+      img
+        display: block
+        width: 100%
+      &.job-video
+        height: 0px
+        line-height: 0px
+        position: relative
+        padding-bottom: 56.25%
+        iframe
+          position: absolute
+          top: 0px
+          left: 0px
+          right: 0px
+          bottom: 0px
+          width: 100%
+          height: 100%
+    .laptop-container
+      flex: 1 0 auto
+      max-width: 90%
+      position: relative
+      margin: 0px auto
+      padding: 1em 0px
+      .laptop-content-container
+        z-index: -1
+        position: absolute
+        top: 7.4%
+        left: 12%
+        right: 12%
+        bottom: 8.75%
+        background: $darkGrey
+        overflow: hidden
+        img
+          width: 100%
+          animation: laptop-slide 20s ease infinite
+
+  //.job-image-container
+    width: 100%
+    padding: $paddingh $paddingw
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    @media screen and (max-width: $mobile)
+      padding: 0px
+    .job-video
+      flex: 1 0 auto
+      margin: 0px auto 1em
+      position: relative
+      overflow: hidden
+      &.youtube
+        height: 0px
+        width: 100%
+        padding-bottom: 56.25%
+      iframe
+        position: absolute
+        top: 0px
+        left: 0px
+        right: 0px
+        bottom: 0px
+        width: 100%
+        height: 100%
+    .image-half
+      flex: 0 1 auto
+      width: calc(50% - .5em)
+      padding-bottom: 1em
+      @media screen and (max-width: $tablet - 100px)
+        width: 100%
+    .image-full
+      flex: 1 0 auto
+      width: 100%
+      margin: 0px auto
+      padding-bottom: 1em
+      display: block
+      &:last-child
+        @media screen and (min-width: $mobile)
+          padding-bottom: 0px
