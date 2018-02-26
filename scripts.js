@@ -26,7 +26,7 @@ $(document).ready(function(){
           $(this).css({opacity: 1})
           $(this).removeClass('fade-on')
         }
-      })
+      });
 
     });
     w.on('scroll', function(){
