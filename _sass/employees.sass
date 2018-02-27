@@ -13,8 +13,8 @@
     top: 0px
     bottom: 0px
     left: 0px
-    width: $column4
-    background-color: $c90
+    width: 320px
+    background-color: $c95
     //background-repeat: repeat
     z-index: -1
   #inner-employees
@@ -26,7 +26,7 @@
       &:first-child
         padding-top: 0px
       .department-title
-        flex: 0 0 $column4
+        flex: 0 0 320px
         text-align: right
         padding: 1em 2em
         h2
@@ -69,11 +69,11 @@
 
   @media screen and (max-width: $desktop + 100px)
     #employee-color-box
-      width: $column3
+      width: 290px
     #inner-employees
       .department
         .department-title
-          flex: 0 0 $column3
+          flex: 0 0 290px
           h2
             font-size: 1.5em
         .department-employees
@@ -82,9 +82,11 @@
 
   @media screen and (max-width: $tablet + 100px)
     #employee-color-box
-      width: $column3
+      width: 200px
     #inner-employees
       .department
+        .department-title
+          flex: 0 0 200px
         .department-employees
           .employee
             flex: 0 0 $column2
@@ -97,6 +99,7 @@
         flex-direction: column
         padding: 0px
         .department-title
+          flex: 0 0 auto
           background: $c100
           text-align: center
           margin: 2em

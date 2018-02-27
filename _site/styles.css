@@ -966,8 +966,8 @@ position: absolute;
 top: 0px;
 bottom: 0px;
 left: 0px;
-width: 25%;
-background-color: #d9d9d9;
+width: 320px;
+background-color: #e5e5e5;
 z-index: -1; }
 #employees #inner-employees {
 z-index: 1; }
@@ -978,7 +978,7 @@ padding: 3.33333em 0px; }
 #employees #inner-employees .department:first-child {
 padding-top: 0px; }
 #employees #inner-employees .department .department-title {
-flex: 0 0 25%;
+flex: 0 0 320px;
 text-align: right;
 padding: 1em 2em; }
 #employees #inner-employees .department .department-title h2 {
@@ -1020,16 +1020,18 @@ height: 9em;
 margin: auto; }
 @media screen and (max-width: 1100px) {
 #employees #employee-color-box {
-width: 33.3333%; }
+width: 290px; }
 #employees #inner-employees .department .department-title {
-flex: 0 0 33.3333%; }
+flex: 0 0 290px; }
 #employees #inner-employees .department .department-title h2 {
 font-size: 1.5em; }
 #employees #inner-employees .department .department-employees .employee {
 flex: 0 0 33.3333%; } }
 @media screen and (max-width: 900px) {
 #employees #employee-color-box {
-width: 33.3333%; }
+width: 200px; }
+#employees #inner-employees .department .department-title {
+flex: 0 0 200px; }
 #employees #inner-employees .department .department-employees .employee {
 flex: 0 0 50%; } }
 @media screen and (max-width: 650px) {
@@ -1039,6 +1041,7 @@ display: none; }
 flex-direction: column;
 padding: 0px; }
 #employees #inner-employees .department .department-title {
+flex: 0 0 auto;
 background: #f2f2f2;
 text-align: center;
 margin: 2em;
