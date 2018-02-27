@@ -11,10 +11,9 @@ sections:
   - question: How can we help you?
     answers:
     - Further Information
-    - Pricing
+    - Join Our Team
     - Upcoming Projects
     - Creative Ideation
     - Career Opportunities
     - Other
 ---
-
