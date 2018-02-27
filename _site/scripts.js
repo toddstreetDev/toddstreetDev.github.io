@@ -22,7 +22,7 @@ $(document).ready(function(){
     var divider = 3
     w.on('load', function(){
       $('.fade-on').each(function(){
-        if ($(this).offset().top < w.height()){
+        if ($(this).offset().top < w.scrollTop() + w.height()){
           $(this).css({opacity: 1})
           $(this).removeClass('fade-on')
         }
