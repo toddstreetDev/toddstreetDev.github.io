@@ -49,6 +49,8 @@
     .contact-form
       flex: 1 1 auto
       padding-left: $paddingw
+      display: flex
+      flex-direction: column
       input, textarea
         font-size: 1em
         border: 1px solid $c80
@@ -56,14 +58,16 @@
         padding: .5em
         margin: .25em
       input
-        width: 50%
+        max-width: 400px
       .contact-message
+        flex: 1 1 auto
         display: flex
         flex-direction: row
         textarea
           flex: 1 1 auto
           resize: vertical
       .contact-reasons
+        flex: 1 1 auto
         display: flex
         flex-direction: row
         flex-wrap: wrap
@@ -95,6 +99,8 @@
           padding-left: $paddingw
       .contact-form
         padding-left: 0px
+        input
+          max-width: $tablet
   @media screen and (max-width:$mobile)
     #contact-inner-container
       .contact-info
