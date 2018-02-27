@@ -24,16 +24,10 @@
           <div class="contact-title">Email<i>*</i></div>
           <input type="email" name="email" value="" required />
 
-          <div class="select">
-            {% for item in include.data.data %}
-              {% if item.question %}
-                <div class="contact-title">{{item.question}}</div>
-                <div class="contact-reasons">
-                  {% for answer in item.answers %}
-                  <input class="answer" type="button" value="{{answer}}" />
-                  {% endfor %}
-                </div>
-              {% endif %}
+          <div class="contact-title">{{include.data.question}}</div>
+          <div class="contact-reasons">
+            {% for answer in include.data.answers %}
+            <input class="answer" type="button" value="{{answer}}" />
             {% endfor %}
           </div>
 

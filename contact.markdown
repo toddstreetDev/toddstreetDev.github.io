@@ -7,13 +7,12 @@ sections:
 - section: contact
   site-map: true
   title: Contact <i>Us</i>
-  data:
-  - question: How can we help you?
-    answers:
-    - Further Information
-    - Join Our Team
-    - Upcoming Projects
-    - Creative Ideation
-    - Career Opportunities
-    - Other
+  question: How can we help you?
+  answers:
+  - Further Information
+  - Join Our Team
+  - Upcoming Projects
+  - Creative Ideation
+  - Career Opportunities
+  - Other
 ---
