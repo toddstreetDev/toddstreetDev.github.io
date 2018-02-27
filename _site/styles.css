@@ -1283,7 +1283,7 @@ flex-direction: column; } }
 #offerings #inner-offerings .offer-box {
 flex: 0 0 33.3333%; }
 #offerings .offer-box {
-flex: 0 0 33.3333%;
+flex: 0 0 auto;
 padding: 0px 5vw;
 border-right: 1px solid rgba(255, 255, 255, 0.15); }
 #offerings .offer-box:last-child {
