@@ -463,9 +463,10 @@ padding: 0.8em 0.7em 0px;
 font-size: 0.8em; } }
 @media screen and (min-width: 800px) {
 .fixed-header header {
+align-items: center;
 animation: slidetop 0.2s ease;
 position: fixed;
-height: auto;
+height: 70px;
 padding: 0.83333em 5em;
 background: white;
 max-width: 1500px;
@@ -696,7 +697,7 @@ left: 0px;
 right: 0px;
 max-width: 50%;
 max-height: 40%;
-margin: auto;
+margin: 0px auto;
 z-index: 0; }
 @media screen and (max-width: 800px) {
 #landing #viewfinder {
@@ -966,7 +967,8 @@ top: 0px;
 bottom: 0px;
 left: 0px;
 width: 25%;
-background-color: #d9d9d9; }
+background-color: #d9d9d9;
+background-repeat: repeat; }
 #employees #inner-employees {
 display: flex;
 flex-direction: row;
