@@ -1,6 +1,6 @@
 ---
 title: Friends of Hudson River Park
-images: 
+cover-image: '/uploads/hudson-river-park.png'
 ---
 
 A toddstreet team member welcomes spring by volunteering at a city park.
