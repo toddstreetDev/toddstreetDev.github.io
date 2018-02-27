@@ -230,7 +230,7 @@ $(document).ready(function(){
         $(this).removeClass('active-answer')
         reason.val('Not Specified')
       } else{
-        $(this).parent('.contact-row').children().removeClass('active-answer')
+        $(this).parent('.contact-reasons').children().removeClass('active-answer')
         $(this).addClass('active-answer')
         reason.val($(this).val())
       }
@@ -283,7 +283,6 @@ $(document).ready(function(){
 
     w.on('load resize', function(){
       laptopImage.stop(true, true)
-      console.log('stopped')
       laptopImage.css('top', '0px')
       laptopBottom(downTime)
     });

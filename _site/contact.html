@@ -95,10 +95,10 @@
           <div class="section-title">
             <h1 class="fade-on">Contact <i>Us</i></h1>
           </div>
-          <form name="contact" id="contact-send" action="https://contactspree.io/smetcalf@toddstreet.com" method="POST">
+          <form name="contact" id="contact-send" action="https://formspree.io/smetcalf@toddstreet.com" method="POST">
             <div id="contact-inner-container">
-              <div class="contact-section info">
-                <div id="map" class="contact-row map"></div>
+              <div class="contact-info">
+                <div id="map"></div>
                 <script>
                   function initMap() {
                     var geocoder = new google.maps.Geocoder();
@@ -319,35 +319,35 @@
                 </script>
                 <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiYQxhjLmxZGQduin21wejwsyFaSMjx6k&callback=initMap"></script>
-                <div class="contact-row info">
+                <div class="contact-info-text">
                   <span class="contact-title address">30 West 24th Street, 11th Floor</span>
-                  <span class="contact-title city">Manhattan, New York</span>
-                  <span class="contact-title telephone">212.966.5900</span>
-                  <span class="contact-title email">contact@toddstreet.com</span>
-                  <span class="contact-title email">hr@toddstreet.com</span>
+                  <span class="contact-title city no-margin">Manhattan, New York</span>
+                  <span class="contact-title telephone no-margin">212.966.5900</span>
+                  <span class="contact-title email ">contact@toddstreet.com</span>
+                  <span class="contact-title email  no-margin">hr@toddstreet.com</span>
                 </div>
               </div>
-              <div class="contact-section contact">
-                <div class="contact-row inputs">
-                  <div class="contact-title no-margin">Name<i>*</i></div>
-                  <input type="text" name="name" value="" required />
-                  <div class="contact-title margin">Email<i>*</i></div>
-                  <input type="email" name="email" value="" required />
-                  <div class="contact-row">
-                    <div class="contact-title question margin">How can we help you?</div>
-                    <div class="contact-row answers">
-                      <input class="answer" type="button" value="Further Information" />
-                      <input class="answer" type="button" value="Join Our Team" />
-                      <input class="answer" type="button" value="Upcoming Projects" />
-                      <input class="answer" type="button" value="Creative Ideation" />
-                      <input class="answer" type="button" value="Career Opportunities" />
-                      <input class="answer" type="button" value="Other" />
-                    </div>
+              <div class="contact-form">
+                <div class="contact-title no-margin">Name<i>*</i></div>
+                <input type="text" name="name" value="" required />
+                <div class="contact-title">Email<i>*</i></div>
+                <input type="email" name="email" value="" required />
+                <div class="select">
+                  <div class="contact-title">How can we help you?</div>
+                  <div class="contact-reasons">
+                    <input class="answer" type="button" value="Further Information" />
+                    <input class="answer" type="button" value="Join Our Team" />
+                    <input class="answer" type="button" value="Upcoming Projects" />
+                    <input class="answer" type="button" value="Creative Ideation" />
+                    <input class="answer" type="button" value="Career Opportunities" />
+                    <input class="answer" type="button" value="Other" />
                   </div>
-                  <input id="answer" class="answer hidden" type="text" name="reason" value="Not Specified" />
-                  <input type="text" name="_gotcha" style="display:none" />
-                  <input type="hidden" name="_next" value = "http://localhost:4000/thanks.html"  style="display:none" />
-                  <div class="contact-title margin">Tell us your message</div>
+                </div>
+                <input id="answer" class="answer hidden" type="text" name="reason" value="Not Specified" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value = "http://localhost:4000/thanks.html"  style="display:none" />
+                <div class="contact-title margin">Tell us your message</div>
+                <div class="contact-message">
                   <textarea name="message" rows="8" ></textarea>
                 </div>
               </div>
