@@ -1280,8 +1280,6 @@ flex-wrap: nowrap; }
 @media screen and (max-width: 1000px) {
 #offerings #inner-offerings {
 flex-direction: column; } }
-#offerings #inner-offerings .offer-box {
-flex: 0 0 33.3333%; }
 #offerings .offer-box {
 flex: 1 1 auto;
 padding: 0px 5vw;
