@@ -1434,6 +1434,7 @@ width: 100%; } }
 #contact #contact-inner-container input.button {
 font-size: 1.3em; }
 #contact #contact-inner-container input.answer {
+background: white;
 outline: none;
 width: auto;
 flex: 1 1 33.3333%;
@@ -1458,6 +1459,8 @@ margin: 0.25em -0.25em; }
 margin: 0.25em 0px; } }
 #contact #contact-inner-container .contact-row.map {
 flex: 1 1 auto;
+height: 400.5px;
+max-height: 400.5px;
 margin-bottom: 2em; }
 @media screen and (max-width: 1000px) {
 #contact #contact-inner-container .contact-row.map {

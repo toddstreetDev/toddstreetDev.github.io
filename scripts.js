@@ -221,7 +221,7 @@ $(document).ready(function(){
   };
 
   //contact page
-  if ($('#form').length > 0){
+  if ($('#contact').length > 0){
     var answer = $('.answer')
     var reason = $('#answer')
 
@@ -230,7 +230,7 @@ $(document).ready(function(){
         $(this).removeClass('active-answer')
         reason.val('Not Specified')
       } else{
-        $(this).parent('.form-row').children().removeClass('active-answer')
+        $(this).parent('.contact-row').children().removeClass('active-answer')
         $(this).addClass('active-answer')
         reason.val($(this).val())
       }
