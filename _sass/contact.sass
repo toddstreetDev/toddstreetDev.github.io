@@ -1,22 +1,33 @@
-#form
+#contact-small
+  padding: 0px $paddingw 0px
+  i
+    color: $red
+  .button-wrapper
+    padding-top: 0px
+    .button
+      background: $red
+      color: white
+
+
+#contact
   position: relative
   padding: 0px $paddingw
   background-size: cover
   .section-title
     i
       color: $red
-  form
+  contact
     border-top: 1px solid $c90
     padding-top: $paddingh
     @media screen and (max-width:$mobile)
       border: none
       padding: 0px
-  #form-inner-container
+  #contact-inner-container
     display: flex
     flex-direction: row
     @media screen and (max-width:$desktop)
       flex-direction: column
-    .form-section
+    .contact-section
       padding: 0px
       padding-left: $paddingh
       position: relative
@@ -35,10 +46,10 @@
           flex-direction: row
         @media screen and (max-width:$mobile)
           flex-direction: column
-      &.form
+      &.contact
         flex: 0 0 $column3*2
 
-    .form-title
+    .contact-title
       line-height: normal
       font-size: 1em
       font-weight: 700
@@ -96,7 +107,7 @@
           border-color: $c20
           color: white
 
-    .form-row
+    .contact-row
       flex: 0 0 auto
       position: relative
       &.answers
@@ -118,7 +129,7 @@
           margin-right: 0px
           flex: 1 1 auto
       &.info
-        .form-title
+        .contact-title
           display: block
           @media screen and (max-width:$mobile)
             text-align: center

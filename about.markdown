@@ -45,6 +45,12 @@ sections:
   site-map: true
   title: "<i>Our</i> Offerings"
 
+- section: contact-small
+  site-map: false
+  title: Want To Take A <i>Deeper Dive?</i>
+  button-text: Contact Us
+  button-link: "/contact.html"
+
 - section: script-hide
   site-map: false
   hash: '#no-landing'

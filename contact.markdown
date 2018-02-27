@@ -4,7 +4,7 @@ layout: content
 nav: 4
 color: "#F2583E"
 sections:
-- section: form
+- section: contact
   site-map: true
   title: Contact <i>Us</i>
   data:
