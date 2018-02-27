@@ -646,6 +646,7 @@ font-weight: bold;
 display: block;
 flex: 1 1 auto; }
 .section-title .section-description .quote-text svg {
+max-width: 10%;
 flex: 0 0 auto;
 height: 30px;
 fill: #bfbfbf; }
@@ -1337,11 +1338,11 @@ padding: 0px 5vw;
 background-size: cover; }
 #contact .section-title i {
 color: #F2583E; }
-#contact contact {
+#contact form {
 border-top: 1px solid #d9d9d9;
 padding-top: 5em; }
 @media screen and (max-width: 600px) {
-#contact contact {
+#contact form {
 border: none;
 padding: 0px; } }
 #contact #contact-inner-container {
