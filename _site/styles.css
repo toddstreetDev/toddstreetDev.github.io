@@ -966,7 +966,7 @@ position: absolute;
 top: 0px;
 bottom: 0px;
 left: 0px;
-width: 320px;
+width: 330px;
 background-color: #e5e5e5;
 z-index: -1; }
 #employees #inner-employees {
@@ -978,14 +978,12 @@ padding: 3.33333em 0px; }
 #employees #inner-employees .department:first-child {
 padding-top: 0px; }
 #employees #inner-employees .department .department-title {
-flex: 0 0 320px;
-text-align: right;
-padding: 1em 2em; }
+flex: 0 0 330px;
+text-align: right; }
 #employees #inner-employees .department .department-title h2 {
-font-size: 1.7em;
+font-size: 1.5em;
 color: #404040;
-margin: 0px;
-margin-top: 2em; }
+margin: 2em; }
 #employees #inner-employees .department .department-employees {
 flex: 1 1 auto;
 display: flex;
@@ -1024,7 +1022,7 @@ width: 290px; }
 #employees #inner-employees .department .department-title {
 flex: 0 0 290px; }
 #employees #inner-employees .department .department-title h2 {
-font-size: 1.5em; }
+font-size: 1.3em; }
 #employees #inner-employees .department .department-employees .employee {
 flex: 0 0 33.3333%; } }
 @media screen and (max-width: 900px) {
@@ -1045,6 +1043,7 @@ flex: 0 0 auto;
 background: #f2f2f2;
 text-align: center;
 margin: 2em;
+padding: 1em;
 margin-top: 0px;
 border-radius: 0.25em; }
 #employees #inner-employees .department .department-title h2 {
