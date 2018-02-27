@@ -1,5 +1,3 @@
-
-
 #employees
   border-top: 1px solid $c100
   border-bottom: 1px solid $c100
@@ -17,106 +15,92 @@
     left: 0px
     width: $column4
     background-color: $c90
-    background-repeat: repeat
+    //background-repeat: repeat
+    z-index: -1
   #inner-employees
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
+    z-index: 1
     .department
-      position: relative
-      z-index: 1
-      flex: 0 0 $column4
-      text-align: right
-      h2
-        font-size: 1.7em
-        color: $c30
-        margin: 2em 1.5em 0px
-        margin-left: 1em
-
-    .department-employees
-      opacity: 1
-      transition: opacity .25s
-      padding: 0px $paddingw/2 $paddingh/2
-      flex: 0 0 $column4*3
-      position: relative
       display: flex
       flex-direction: row
-      flex-wrap: wrap
-      .employee
+      padding: $paddingh/1.5 0px
+      &:first-child
+        padding-top: 0px
+      .department-title
         flex: 0 0 $column4
-        margin: 0px 0px 2em
-
-        .employee-text
-          padding: 0px 2em
-          margin-top: .5em
-          text-align: center
-          line-height: .9em
-          h3
-            margin: .5em 0px .2em
-            color: $c30
-            letter-spacing: .05em
-            font-size: 1em
-          span
-            color: $c60
-            font-size: .8em
-            line-height: 1em
-
-        .employee-photo
-          //box-shadow: 2px 2px 20px rgba(0,0,0,.3)
-          opacity: .9
-          border-radius: 50%
-          background-position: center center
-          background-repeat: no-repeat
-          background-size: cover
-          width: 9em
-          height: 9em
-          margin: auto
-          @media screen and (max-width: $mobile)
-            width: 32vw
-            height: 32vw
-            max-height: 140px
-            max-width: 140px
+        text-align: right
+        padding: 1em 2em
+        h2
+          font-size: 1.7em
+          color: $c30
+          margin: 0px
+          margin-top: 2em
+      .department-employees
+        flex: 1 1 auto
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        padding: 1em
+        .employee
+          flex: 0 0 $column4
+          margin: 0px 0px 2em
+          .employee-text
+            padding: 0px 2em
+            margin-top: .5em
+            text-align: center
+            line-height: .9em
+            h3
+              margin: .5em 0px .2em
+              color: $c30
+              letter-spacing: .05em
+              font-size: 1em
+            span
+              color: $c60
+              font-size: .8em
+              line-height: 1em
+          .employee-photo
+            opacity: .9
+            border-radius: 50%
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: cover
+            width: 9em
+            height: 9em
+            margin: auto
 
   @media screen and (max-width: $desktop + 100px)
-    #inner-employees
-      .department
-        h2
-          font-size: 1.5em
-      .department-employees
-        .employee
-          flex: 0 0 $column3
-
-  @media screen and (max-width: $tablet)
     #employee-color-box
       width: $column3
     #inner-employees
       .department
-        flex: 0 0 $column3
-        h2
-          font-size: 1.3em
-      .department-employees
-        flex: 0 0 $column3*2
-        .employee
-          flex: 0 0 $column2
-  @media screen and (max-width: $mobile)
+        .department-title
+          flex: 0 0 $column3
+          h2
+            font-size: 1.5em
+        .department-employees
+          .employee
+            flex: 0 0 $column3
+
+  @media screen and (max-width: $tablet + 100px)
+    #employee-color-box
+      width: $column3
+    #inner-employees
+      .department
+        .department-employees
+          .employee
+            flex: 0 0 $column2
+
+  @media screen and (max-width: $mobile + 50px)
     #employee-color-box
       display: none
     #inner-employees
       .department
-        padding: $paddingh/4 0px
-        margin: 0px $paddingw*1.5 $paddingh/2
-        flex: 1 1 $column
-        text-align: center
-        background-color: $c100
-        h2
-          margin: 0px
-          font-size: 1.5em
-      .department-employees
-        flex: 0 0 $column
-        padding: 0px $paddingw*1.5 $paddingh/2
-        .employee
-          flex: 0 0 $column2
-          .employee-text
-            padding: 0px 1em
-            span
-              font-size: .7em
+        flex-direction: column
+        padding: 0px
+        .department-title
+          background: $c100
+          text-align: center
+          margin: 2em
+          margin-top: 0px
+          border-radius: .25em
+          h2
+            margin: 0px

@@ -29,7 +29,7 @@ $(document).ready(function(){
       });
 
     });
-    w.on('scroll', function(){
+    w.on('scroll resize', function(){
       var top = w.scrollTop()
       var height = w.height()
       var bottom = top + height

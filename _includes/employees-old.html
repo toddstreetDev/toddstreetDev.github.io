@@ -1,0 +1,34 @@
+<section id="employees">
+
+  {% include title.html data=include.data %}
+
+  <div id="inner-employees">
+    {% assign departments = site.departments | sort: 'position'%}
+    {% for department in departments %}
+
+        <div class="department">
+          <h2 class="fade-on">{{department.title}}</h2>
+        </div>
+        <div class="department-employees">
+          {% assign employees = site.employees | where: 'department', department.title | sort: 'position' %}
+          {% for employee in employees %}
+          {% if employee.published != false %}
+
+            <div class="employee fade-on">
+              <div class="employee-photo image" style="background-image: url({{site.url | append: site.baseurl}}{{employee.image}})" data-department="{{department.title}}" data-name="{{employee.title}}" data-role="{{employee.role}}">
+
+              </div>
+              <div class="employee-text">
+                <h3>{{employee.title}}</h3>
+                <span>{{employee.role}}</span>
+              </div>
+            </div>
+
+            {% endif %}
+            {% endfor %}
+        </div>
+      {% endfor %}
+  </div>
+  <div id="employee-color-box" style="background-image:url({{site.url | append:site.baseurl}}/uploads/wave.svg)"></div>
+  <div class="clearfix"></div>
+</section>

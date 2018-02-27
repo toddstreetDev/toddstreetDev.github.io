@@ -968,48 +968,48 @@ bottom: 0px;
 left: 0px;
 width: 25%;
 background-color: #d9d9d9;
-background-repeat: repeat; }
+z-index: -1; }
 #employees #inner-employees {
+z-index: 1; }
+#employees #inner-employees .department {
 display: flex;
 flex-direction: row;
-flex-wrap: wrap; }
-#employees #inner-employees .department {
-position: relative;
-z-index: 1;
+padding: 3.33333em 0px; }
+#employees #inner-employees .department:first-child {
+padding-top: 0px; }
+#employees #inner-employees .department .department-title {
 flex: 0 0 25%;
-text-align: right; }
-#employees #inner-employees .department h2 {
+text-align: right;
+padding: 1em 2em; }
+#employees #inner-employees .department .department-title h2 {
 font-size: 1.7em;
 color: #404040;
-margin: 2em 1.5em 0px;
-margin-left: 1em; }
-#employees #inner-employees .department-employees {
-opacity: 1;
-transition: opacity 0.25s;
-padding: 0px 2.5vw 2.5em;
-flex: 0 0 75%;
-position: relative;
+margin: 0px;
+margin-top: 2em; }
+#employees #inner-employees .department .department-employees {
+flex: 1 1 auto;
 display: flex;
 flex-direction: row;
-flex-wrap: wrap; }
-#employees #inner-employees .department-employees .employee {
+flex-wrap: wrap;
+padding: 1em; }
+#employees #inner-employees .department .department-employees .employee {
 flex: 0 0 25%;
 margin: 0px 0px 2em; }
-#employees #inner-employees .department-employees .employee .employee-text {
+#employees #inner-employees .department .department-employees .employee .employee-text {
 padding: 0px 2em;
 margin-top: 0.5em;
 text-align: center;
 line-height: 0.9em; }
-#employees #inner-employees .department-employees .employee .employee-text h3 {
+#employees #inner-employees .department .department-employees .employee .employee-text h3 {
 margin: 0.5em 0px 0.2em;
 color: #404040;
 letter-spacing: 0.05em;
 font-size: 1em; }
-#employees #inner-employees .department-employees .employee .employee-text span {
+#employees #inner-employees .department .department-employees .employee .employee-text span {
 color: #8c8c8c;
 font-size: 0.8em;
 line-height: 1em; }
-#employees #inner-employees .department-employees .employee .employee-photo {
+#employees #inner-employees .department .department-employees .employee .employee-photo {
 opacity: 0.9;
 border-radius: 50%;
 background-position: center center;
@@ -1018,49 +1018,34 @@ background-size: cover;
 width: 9em;
 height: 9em;
 margin: auto; }
-@media screen and (max-width: 600px) {
-#employees #inner-employees .department-employees .employee .employee-photo {
-width: 32vw;
-height: 32vw;
-max-height: 140px;
-max-width: 140px; } }
 @media screen and (max-width: 1100px) {
-#employees #inner-employees .department h2 {
-font-size: 1.5em; }
-#employees #inner-employees .department-employees .employee {
-flex: 0 0 33.3333%; } }
-@media screen and (max-width: 800px) {
 #employees #employee-color-box {
 width: 33.3333%; }
-#employees #inner-employees .department {
+#employees #inner-employees .department .department-title {
 flex: 0 0 33.3333%; }
-#employees #inner-employees .department h2 {
-font-size: 1.3em; }
-#employees #inner-employees .department-employees {
-flex: 0 0 66.6666%; }
-#employees #inner-employees .department-employees .employee {
+#employees #inner-employees .department .department-title h2 {
+font-size: 1.5em; }
+#employees #inner-employees .department .department-employees .employee {
+flex: 0 0 33.3333%; } }
+@media screen and (max-width: 900px) {
+#employees #employee-color-box {
+width: 33.3333%; }
+#employees #inner-employees .department .department-employees .employee {
 flex: 0 0 50%; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 #employees #employee-color-box {
 display: none; }
 #employees #inner-employees .department {
-padding: 1.25em 0px;
-margin: 0px 7.5vw 2.5em;
-flex: 1 1 100%;
+flex-direction: column;
+padding: 0px; }
+#employees #inner-employees .department .department-title {
+background: #f2f2f2;
 text-align: center;
-background-color: #f2f2f2; }
-#employees #inner-employees .department h2 {
-margin: 0px;
-font-size: 1.5em; }
-#employees #inner-employees .department-employees {
-flex: 0 0 100%;
-padding: 0px 7.5vw 2.5em; }
-#employees #inner-employees .department-employees .employee {
-flex: 0 0 50%; }
-#employees #inner-employees .department-employees .employee .employee-text {
-padding: 0px 1em; }
-#employees #inner-employees .department-employees .employee .employee-text span {
-font-size: 0.7em; } }
+margin: 2em;
+margin-top: 0px;
+border-radius: 0.25em; }
+#employees #inner-employees .department .department-title h2 {
+margin: 0px; } }
 #clients {
 padding: 0px 5vw 1.25em;
 background: #262626;
