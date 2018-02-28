@@ -58,6 +58,7 @@
         padding: .5em
         margin: .25em
       input
+        display: block
         max-width: 400px
       .contact-reasons
         flex: 0 0 auto
@@ -91,7 +92,7 @@
         flex: 0 0 50%
   @media screen and (max-width:$tablet)
     #contact-inner-container
-      flex-direction: column
+      display: block
       .contact-info
         flex-direction: row
         #map
@@ -99,11 +100,15 @@
         .contact-info-text
           flex: 1 1 auto
           padding-left: $paddingw
+          .address
+            margin-top: 0px
       .contact-form
-        flex: 1 1 auto
+        display: block
         padding-left: 0px
         input
+          margin-left: 0px
           max-width: $tablet
+          width: 50%
   @media screen and (max-width:$mobile)
     #contact-inner-container
       .contact-info
