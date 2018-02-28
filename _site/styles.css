@@ -972,10 +972,10 @@ background-color: #e5e5e5;
 z-index: -1; }
 @media screen\9 {
 #employees #employee-color-box {
-background: #e5e5e5; } }
+background: #e5e5e5 !important; } }
 @media screen\0 {
 #employees #employee-color-box {
-background: #e5e5e5; } }
+background: #e5e5e5 !important; } }
 #employees #inner-employees {
 z-index: 1; }
 #employees #inner-employees .department {
