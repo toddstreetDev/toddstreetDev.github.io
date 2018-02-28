@@ -47,8 +47,7 @@
           display: block
 
     .contact-form
-      max-width: 66.666%
-      flex: 1 1 auto
+      flex: 0 1 66.666%
       padding-left: $paddingw
       display: flex
       flex-direction: column
@@ -89,7 +88,7 @@
       .contact-info
         flex: 0 0 50%
       .contact-form
-        max-width: 50%
+        flex: 0 0 50%
   @media screen and (max-width:$tablet)
     #contact-inner-container
       flex-direction: column
@@ -101,7 +100,7 @@
           flex: 1 1 auto
           padding-left: $paddingw
       .contact-form
-        max-width: 100%
+        flex: 1 1 auto
         padding-left: 0px
         input
           max-width: $tablet
