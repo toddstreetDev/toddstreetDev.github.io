@@ -1407,8 +1407,6 @@ flex: 1 1 auto;
 resize: vertical; }
 @media screen and (max-width: 1000px) {
 #contact #contact-inner-container .contact-info {
-flex: 0 0 50%; }
-#contact #contact-inner-container .contact-form {
 flex: 0 0 50%; } }
 @media screen and (max-width: 800px) {
 #contact #contact-inner-container {
