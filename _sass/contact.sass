@@ -47,6 +47,7 @@
           display: block
 
     .contact-form
+      max-width: 66.666%
       flex: 1 1 auto
       padding-left: $paddingw
       display: flex
@@ -59,15 +60,8 @@
         margin: .25em
       input
         max-width: 400px
-      .contact-message
-        flex: 1 1 auto
-        display: flex
-        flex-direction: row
-        textarea
-          flex: 1 1 auto
-          resize: vertical
       .contact-reasons
-        flex: 0 0  auto
+        flex: 0 0 auto
         display: flex
         flex-direction: row
         flex-wrap: wrap
@@ -77,16 +71,25 @@
           border-radius: .25em
           outline: none
           &:hover
-            background: $c105
-            color: black
+            background: $c90
+            border-color: $c90
           &.active-answer
             background: $c20
             border-color: $c20
             color: white
+      .contact-message
+        flex: 1 1 auto
+        display: flex
+        flex-direction: row
+        textarea
+          flex: 1 1 auto
+          resize: vertical
   @media screen and (max-width:$desktop)
     #contact-inner-container
       .contact-info
         flex: 0 0 50%
+      .contact-form
+        max-width: 50%
   @media screen and (max-width:$tablet)
     #contact-inner-container
       flex-direction: column
@@ -98,6 +101,7 @@
           flex: 1 1 auto
           padding-left: $paddingw
       .contact-form
+        max-width: 100%
         padding-left: 0px
         input
           max-width: $tablet

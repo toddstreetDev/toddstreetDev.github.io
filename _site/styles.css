@@ -1368,6 +1368,7 @@ flex: 0 0 auto; }
 #contact #contact-inner-container .contact-info .contact-info-text span {
 display: block; }
 #contact #contact-inner-container .contact-form {
+max-width: 66.666%;
 flex: 1 1 auto;
 padding-left: 5vw;
 display: flex;
@@ -1380,13 +1381,6 @@ padding: 0.5em;
 margin: 0.25em; }
 #contact #contact-inner-container .contact-form input {
 max-width: 400px; }
-#contact #contact-inner-container .contact-form .contact-message {
-flex: 1 1 auto;
-display: flex;
-flex-direction: row; }
-#contact #contact-inner-container .contact-form .contact-message textarea {
-flex: 1 1 auto;
-resize: vertical; }
 #contact #contact-inner-container .contact-form .contact-reasons {
 flex: 0 0 auto;
 display: flex;
@@ -1398,15 +1392,24 @@ background: white;
 border-radius: 0.25em;
 outline: none; }
 #contact #contact-inner-container .contact-form .contact-reasons .answer:hover {
-background: #fafafa;
-color: black; }
+background: #d9d9d9;
+border-color: #d9d9d9; }
 #contact #contact-inner-container .contact-form .contact-reasons .answer.active-answer {
 background: #262626;
 border-color: #262626;
 color: white; }
+#contact #contact-inner-container .contact-form .contact-message {
+flex: 1 1 auto;
+display: flex;
+flex-direction: row; }
+#contact #contact-inner-container .contact-form .contact-message textarea {
+flex: 1 1 auto;
+resize: vertical; }
 @media screen and (max-width: 1000px) {
 #contact #contact-inner-container .contact-info {
-flex: 0 0 50%; } }
+flex: 0 0 50%; }
+#contact #contact-inner-container .contact-form {
+max-width: 50%; } }
 @media screen and (max-width: 800px) {
 #contact #contact-inner-container {
 flex-direction: column; }
@@ -1418,6 +1421,7 @@ flex: 0 0 50%; }
 flex: 1 1 auto;
 padding-left: 5vw; }
 #contact #contact-inner-container .contact-form {
+max-width: 100%;
 padding-left: 0px; }
 #contact #contact-inner-container .contact-form input {
 max-width: 800px; } }
