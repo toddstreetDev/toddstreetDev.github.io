@@ -495,7 +495,7 @@ display: flex;
 flex-direction: row; }
 @media screen and (max-width: 600px) {
 footer {
-flex-direction: column;
+display: block;
 text-align: center; } }
 footer #footer-map {
 background: #262626;
