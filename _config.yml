@@ -93,6 +93,7 @@ description: 'Write an awesome description for your new site here. You can edit 
   results) and in your feed.xml site description. '
 plugins:
 - jekyll-tidy
+- jekyll-autoprefixer
 sass:
   style: nested
 markdown: kramdown
