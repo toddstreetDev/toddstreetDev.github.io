@@ -47,7 +47,7 @@ sections:
 
 - section: contact-small
   site-map: false
-  title: Want To Take A <i>Deeper Dive?</i>
+  title: Want A <i>Deeper Dive?</i>
   button-text: Contact Us
   button-link: "/contact.html"
 
