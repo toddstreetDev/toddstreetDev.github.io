@@ -8,6 +8,6 @@ cover-image: "/uploads/citypoint_cover.jpg"
 images:
 - row:
   - laptop: "/uploads/citypoint_website.jpg"
-overview: 4
+overview: false
 work-category: Communications
 ---

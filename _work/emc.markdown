@@ -5,7 +5,7 @@ position: 4
 header: Incentive Program
 work-category: Experiential Events
 color: "#3778ae"
-overview: 3
+overview: 2
 cover-image: "/uploads/emc_cover.jpg"
 images:
 - row:
@@ -15,4 +15,3 @@ images:
   - file: "/uploads/pasted-image-2081.jpg"
   - file: "/uploads/emc_woman.jpg"
 ---
-

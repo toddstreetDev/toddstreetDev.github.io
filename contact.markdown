@@ -6,13 +6,12 @@ color: "#F2583E"
 sections:
 - section: contact
   site-map: true
-  title: Contact <i>Us</i>
+  title: We'd Love To Hear From <i>You</i>
   question: How can we help you?
   answers:
-  - Further Information
+  - Take A Deeper Dive
   - Join Our Team
-  - Upcoming Projects
+  - Discuss Future Projects
   - Creative Ideation
-  - Career Opportunities
   - Other
 ---

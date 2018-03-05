@@ -19,7 +19,7 @@ var lbb = $('#lightbox-bg')
 $(document).ready(function(){
 
   if ($('.fade-on').length > 0){
-    var divider = 3
+    var divider = 4
     w.on('load', function(){
       $('.fade-on').each(function(){
         if ($(this).offset().top < w.scrollTop() + w.height()){
