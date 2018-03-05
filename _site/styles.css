@@ -1864,7 +1864,7 @@ width: 50%; } }
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
 text-align: center;
-padding-bottom: 5em; }
+padding: 0px 0px 5em; }
 #contact #contact-inner-container .contact-form input {
 width: 100%; }
 #contact #contact-inner-container .contact-form .contact-message {
