@@ -4,10 +4,10 @@
 
 {% include title.html data=include.data %}
 
+{% assign posts = site.blog-posts | where_exp: 'item', 'item.published != false' %}
+
 {% if include.data.overview == true %}
-{% assign posts = site.blog-posts | where: 'overview', 'true' %}
-{% else %}
-{% assign posts = site.blog-posts %}
+{% assign posts = posts | where: 'overview', 'true' %}
 {% endif %}
   {% for post in posts %}
   <div class="post-container fade-on mobile-cancel-fade{% if forloop.last %} last{% endif %}">
