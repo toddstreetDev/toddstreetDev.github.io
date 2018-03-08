@@ -645,7 +645,7 @@ color: #333;
 opacity: 0.3;
 font-size: 2em;
 padding: 0px 0.25em; }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
 header .social-container .social {
 display: none;
 font-size: 1.5em; } }
