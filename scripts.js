@@ -137,7 +137,6 @@ $(document).ready(function(){
   if ($('#landing').length > 0){
     var bg = $('#site-background')
 
-
     w.on('load scroll', function(){
       var top = w.scrollTop()
       var opacity = 1 - (top/1000)
