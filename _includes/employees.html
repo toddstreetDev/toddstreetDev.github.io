@@ -7,8 +7,8 @@
     {% for department in departments %}
 
         <div class="department">
-          <div class="department-title">
-            <h2 class="fade-on">{{department.title}}</h2>
+          <div class="department-title fade-on">
+            <h2 class="">{{department.title}}</h2>
           </div>
           <div class="department-employees">
             {% assign employees = site.employees | where: 'department', department.title | sort: 'position' %}

@@ -10,9 +10,9 @@
     <link rel="icon" type="image/png" href="{{ site.baseurl | prepend: site.url }}/uploads/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="{{ site.baseurl | prepend: site.url }}/uploads/favicon-16x16.png" sizes="16x16" />
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700,700i,600,500,400,300|Roboto:300,300i,400,400i" rel="stylesheet">
     <link rel="stylesheet" href="{{site.url | append: site.baseurl}}/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700,700i,600,500,400,300|Roboto:300,300i,400,400i" rel="stylesheet">
   </head>
   <body>
     <div id="site-container">
@@ -33,7 +33,7 @@
 
     </div>
     {% if page.landing == true %}
-    <div id="site-background" style="background-image: url({{site.url |append: site.baseurl}}/uploads/cityscape2.png); {% if page.background %}background-color:{{page.background}}{% endif %}"></div>
+    <div id="site-background" style="background-image: url({{site.url |append: site.baseurl}}/uploads/cityscape.jpg); {% if page.background %}background-color:{{page.background}}{% endif %}"></div>
     {% endif %}
     <div id="lightbox">
       <div class="lightbox-button previous"><i class="fa fa-chevron-left"></i></div>
