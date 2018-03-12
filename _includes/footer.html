@@ -1,20 +1,22 @@
 <footer>
   <div id="footer-map">
   {% assign navpages = site.pages | where-exp: 'item', 'item.nav' | sort: 'nav' %}
-    {% for page in navpages %}
-    {%  if page.sections %}
+    {% for navpage in navpages %}
+    {%  if navpage.sections %}
+    {% if navpage.title %}
     <div class="footer-page">
-      <a href="{{site.url | append: site.baseurl}}{{page.url}}">
-        <h3>{{page.title}}</h3>
+      <a href="{{site.url | append: site.baseurl}}{{navpage.url}}">
+        <h3>{{navpage.title}}</h3>
       </a>
-        {% for section in page.sections %}
-        {% if section.site-map %}
-          <a href="{{site.url | append: site.baseurl}}{{page.url}}#{{section.section}}">
-            <span>{{section.title}}</span>
-          </a>
-        {% endif %}
-        {% endfor %}
+      {% for section in navpage.sections %}
+      {% if section.site-map %}
+        <a href="{{site.url | append: site.baseurl}}{{navpage.url}}#{{section.section}}">
+          <span>{{section.title}}</span>
+        </a>
+      {% endif %}
+      {% endfor %}
     </div>
+    {% endif %}
     {% endif %}
     {% endfor %}
   </div>
