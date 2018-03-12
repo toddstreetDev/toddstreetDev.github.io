@@ -88,9 +88,7 @@ telephone: 212.966.5900
 emails:
 - contact@toddstreet.com
 - hr@toddstreet.com
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description. '
+description: 'A Marketing Communications Agency that creates compelling content and design innovative solutions to engage audiences authentically across live and virtual platforms.'
 plugins:
 - jekyll-tidy
 - jekyll-autoprefixer
