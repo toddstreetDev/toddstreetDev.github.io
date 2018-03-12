@@ -56,6 +56,5 @@ sections:
   hash: '#no-landing'
   ids:
     - landing
-    - blog
 layout: content
 ---
