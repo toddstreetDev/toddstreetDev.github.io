@@ -4,7 +4,7 @@ date: 2017-09-22 17:43:00 -04:00
 class: fill
 ---
 
-<svg version="1.1" id="Layer_1" class="engaging-minds" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" class="engaging-minds" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 119 128" style="enable-background:new 0 0 119 128;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}

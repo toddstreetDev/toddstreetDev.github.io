@@ -4,7 +4,7 @@ date: 2018-01-18 13:26:00 -05:00
 position: 22
 ---
 
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 163.6 164" style="enable-background:new 0 0 163.6 164;" xml:space="preserve">
 <g>
 	<path d="M95.3,139.8c0.4-3.9,2.2-7,5.6-9c2.4-1.5,5-2,7.8-1.6c5.8,0.9,9.9,5.9,9.8,11.6c-0.1,3.4-1.3,6.2-3.8,8.4

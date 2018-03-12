@@ -4,7 +4,7 @@ date: 2018-01-18 16:43:00 -05:00
 class: fill
 ---
 
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <g>
 	<path d="M67,99.1H32c-8.6,0-16.6-3.3-22.7-9.4C3.3,83.6,0,75.6,0,67V32c0-8.6,3.3-16.6,9.4-22.7C15.4,3.3,23.5,0,32,0h35

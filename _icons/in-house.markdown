@@ -3,7 +3,7 @@ title: In-House
 date: 2017-09-27 14:13:00 -04:00
 ---
 
-<svg class="svg-line no-fill" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="svg-line no-fill" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 150" xml:space="preserve">
 
 	<polygon class="in-house-house" points="143.9,54.9 75,10.5 6.1,54.9 6.1,139.5 143.9,139.5 	"/>

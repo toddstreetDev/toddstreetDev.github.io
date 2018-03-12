@@ -4,7 +4,7 @@ date: 2017-09-27 11:17:00 -04:00
 class: fill
 ---
 
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
 <g class="">
 		<rect x="0.5" y="57.9" transform="matrix(0.5339 -0.8456 0.8456 0.5339 -46.6544 50.3554)" class="st0" width="43.8" height="19.2"/>

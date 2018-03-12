@@ -3,7 +3,7 @@ title: fulltime
 date: 2017-09-22 17:44:00 -04:00
 class: stroke
 ---
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
 <g>
 	<path d="M93.5,49.4l-12-6.6L87,80.5h-5.2l-5.2-23.7h-3l-5.2,23.7h-5.2l5.5-37.9l-12.3,6.8L54.2,45l17.9-9.6

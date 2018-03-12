@@ -3,7 +3,7 @@ title: calendar
 date: 2017-09-22 17:44:00 -04:00
 class: stroke
 ---
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 86.2" style="enable-background:new 0 0 100 86.2;" xml:space="preserve">
 <path d="M95.2,8.2H4.8c-2,0-3.6,1.6-3.6,3.6v70.1c0,2,1.6,3.6,3.6,3.6h90.4c2,0,3.6-1.6,3.6-3.6V11.8
 	C98.8,9.8,97.2,8.2,95.2,8.2z"/>

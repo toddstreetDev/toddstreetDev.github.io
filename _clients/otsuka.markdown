@@ -4,7 +4,7 @@ date: 2018-01-18 13:26:00 -05:00
 position: 12
 ---
 
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 430.8 164" style="enable-background:new 0 0 430.8 164;" xml:space="preserve">
 <g id="knQzlN_1_">
 	<g>

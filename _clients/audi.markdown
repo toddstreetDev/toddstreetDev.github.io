@@ -7,7 +7,7 @@ published: false
 
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 425 257" style="enable-background:new 0 0 425 257;" xml:space="preserve">
 <g id="fXC0Yn.tif">
 	<path d="M415,79.3c-0.7,3.3-1.2,6.6-2,9.8c-10.6,48.4-66,71.2-107.6,44.4c-1.7-1.1-3.3-2.2-5.1-3.4c-29.2,19.7-58.3,19.8-87.7,0.1
