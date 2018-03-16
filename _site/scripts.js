@@ -274,6 +274,7 @@ $(document).ready(function(){
   });
 
   //laptop image scroll
+  /*
   if ($('.laptop-image').length > 0){
     var laptopImage = $('.laptop-image')
     var laptop = laptopImage.parent()
@@ -303,6 +304,6 @@ $(document).ready(function(){
       }, 1000)
     }
   }
-
+*/
 
 });

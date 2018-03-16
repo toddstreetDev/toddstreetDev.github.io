@@ -1186,6 +1186,7 @@ height: 100%; }
 width: 100%;
 position: relative; }
 #job #job-images .job-images-row .job-image.row-laptop .laptop svg {
+pointer-events: none;
 position: relative;
 z-index: 1;
 width: 100%; }
@@ -1196,7 +1197,7 @@ left: 12.8%;
 right: 12.8%;
 bottom: 8.75%;
 background: #333;
-overflow: hidden; }
+overflow: auto; }
 #job #job-images .job-images-row .job-image.row-laptop .laptop .laptop-image-container .laptop-image {
 position: absolute;
 width: 100%;
