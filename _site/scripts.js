@@ -262,7 +262,7 @@ $(document).ready(function(){
   };
   //footer mobile rainbow
   w.on('scroll', function(){
-    if(w.width() <= 800){
+    if(w.width() <= 600){
       if(footerIcon.offset().top < w.scrollTop() + (w.height()/2)){
         footerIcon.addClass('footer-icon-on')
       } else {

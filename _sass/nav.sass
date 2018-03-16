@@ -75,7 +75,7 @@ header
           font-size: .8em
 
 .fixed-header
-  @media screen and (min-width: $tablet)
+  @media screen and (min-width: $tablet + 1px)
     header
       align-items: center
       animation: slidetop .2s ease
@@ -96,7 +96,7 @@ header
         .social
           display: inherit
           font-size: 1.2em
-          padding-left: 1.5em
+          padding-left: 1.2em
           opacity: .3
           &:hover
             opacity: 1
