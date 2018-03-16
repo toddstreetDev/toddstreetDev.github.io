@@ -779,7 +779,7 @@ transition: 0.5s;
 width: 8.2em;
 fill: white;
 opacity: 0.1; }
-footer #footer-info #footer-icon.footer-icon-on svg {
+footer #footer-info #footer-icon.footer-icon-on svg, footer #footer-info #footer-icon:hover svg {
 opacity: 1;
 -webkit-animation: rainbow 0.5s infinite;
         animation: rainbow 0.5s infinite; }
