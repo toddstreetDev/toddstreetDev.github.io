@@ -10,7 +10,7 @@
           {% include map.html %}
           <div class="contact-info-text">
             <span class="contact-title address">{{site.address}}</span>
-            <span class="contact-title city no-margin">{{site.city}}, {{site.state}}</span>
+            <span class="contact-title city no-margin">{{site.city}}, {{site.state}}, {{site.zip}}</span>
             <span class="contact-title telephone no-margin">{{site.telephone}}</span>
             {% for email in site.emails %}
             <span class="contact-title email {% if forloop.index > 1 %} no-margin{% endif %}">{{email}}</span>

@@ -81,8 +81,8 @@ defaults:
     -
 email: smetcalf@toddstreet.com
 address: 30 West 24th Street, 11th Floor
-city: New York,
-state: New York,
+city: New York
+state: New York
 zip: 10010
 telephone: 212.966.5900
 emails:
