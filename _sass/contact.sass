@@ -57,21 +57,22 @@
         resize: vertical
         padding: .5em
         margin: .25em
-      input
+      .input
         display: block
-        max-width: 400px
       .contact-reasons
         flex: 0 0 auto
         display: flex
         flex-direction: row
         flex-wrap: wrap
+        justify-content: center
         .answer
-          flex: 1 0 auto
+          flex: 0 0 48.5%
           background: white
           border-radius: .25em
           outline: none
-          &:hover
-            background: $c100
+          @media screen and (min-width: $tablet)
+            &:hover
+              background: $c100
 
           &.active-answer
             background: $c20
@@ -88,6 +89,10 @@
     #contact-inner-container
       .contact-info
         flex: 0 0 50%
+      .contact-form
+        .contact-reasons
+          .answer
+            flex: 1 1 100%
   @media screen and (max-width:$tablet)
     #contact-inner-container
       display: block
@@ -103,14 +108,17 @@
       .contact-form
         display: block
         padding-left: 0px
-        input
+        .input
           margin-left: 0px
           max-width: $tablet
           width: 100%
+        .contact-reasons
+          .answer
+            flex: 0 0 48.5%
   @media screen and (max-width:$mobile)
     #contact-inner-container
       .contact-info
-        flex-direction: column
+        flex-direction: column-reverse
         #map
           flex: 1 1 auto
         .contact-info-text
@@ -130,6 +138,7 @@
           .answer
             flex: 1 1 auto
             margin: .25em 0px
+            background: $c100
 
 
 
