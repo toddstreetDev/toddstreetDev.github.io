@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thanks
+Noindex: /thanks
+Disallow: /*.jpg
+Sitemap: http://www.toddstreet.com/sitemap.xml
