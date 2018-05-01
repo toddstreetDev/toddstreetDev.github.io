@@ -5,5 +5,5 @@ position: 22
 role: Coordinator
 image: "/uploads/anchi-friedman.jpg"
 department: Client Engagement
-published: false
+published: true
 ---
