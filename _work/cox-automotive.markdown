@@ -1,5 +1,6 @@
 ---
 title: Cox Automotive
+permalink: headquarter_branding
 date: 2018-01-18 13:00:00 -05:00
 position: 10
 header: Headquarter Branding

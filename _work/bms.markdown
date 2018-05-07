@@ -1,5 +1,6 @@
 ---
 title: Bristol-Myers Squibb
+permalink: product_launch_meeting
 date: 2012-12-17 00:00:00 -05:00
 position: 2
 header: Product Launch Meeting

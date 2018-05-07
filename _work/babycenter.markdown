@@ -1,5 +1,6 @@
 ---
 title: Babycenter
+permalink: consumer_awards
 date: 2012-12-17 00:00:00 -05:00
 position: 8
 header: Consumer Awards

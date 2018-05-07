@@ -1,5 +1,6 @@
 ---
 title: Netflix
+permalink: media_and_influencer_launch
 date: 2012-12-17 00:00:00 -05:00
 position: 0
 header: GODLESS - Media and Influencer Launch

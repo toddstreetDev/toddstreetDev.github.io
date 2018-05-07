@@ -1,5 +1,6 @@
 ---
 title: Ricoh Brand Anthem
+permalink: global_brand_anthem
 date: 2012-12-17 00:00:00 -05:00
 published: true
 position: 12

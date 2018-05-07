@@ -1,5 +1,6 @@
 ---
 title: Plastics Make it Possible
+permalink: awareness_campaign_pop_up
 date: 2012-12-17 00:00:00 -05:00
 position: 1
 header: Awareness Campaign Pop-Up

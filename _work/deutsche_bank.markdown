@@ -1,5 +1,6 @@
 ---
 title: Deutsche Bank
+permalink: vip_sponsorship
 date: 2012-12-17 00:00:00 -05:00
 position: 5
 header: VIP Sponsorship

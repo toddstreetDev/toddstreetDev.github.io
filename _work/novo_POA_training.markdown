@@ -1,5 +1,6 @@
 ---
 title: Novo POA Training
+permalink: game_based_training
 date: 2012-12-17 00:00:00 -05:00
 position: 11
 header: Game-based Training

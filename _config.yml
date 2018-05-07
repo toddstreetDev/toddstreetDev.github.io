@@ -92,6 +92,7 @@ description: 'NYC Based Marketing Communications Agency.'
 plugins:
 - jekyll-tidy
 - jekyll-autoprefixer
+- jekyll-sitemap
 sass:
   style: nested
 markdown: kramdown
