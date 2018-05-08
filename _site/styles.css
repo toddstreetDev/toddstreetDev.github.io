@@ -1596,6 +1596,8 @@ margin-top: 0.2em;
 font-size: 0.8em; }
 #blog .post-container .post-full {
 display: none; }
+#blog .post-container .post-full .post-video {
+padding: 1em 0px 2em; }
 #blog .post-container .post-full .post-images {
 display: -webkit-box;
 display: -ms-flexbox;
