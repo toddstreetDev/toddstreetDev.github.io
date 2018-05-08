@@ -2,7 +2,7 @@
 title: 'Partnership for a Healthier America: 2015 Summit'
 cover-image: '/uploads/PFHA.png'
 published: false
-overview: true
+date: 2014-01-01
 ---
 
 toddstreet joins forces with an outstanding government organization to promote a healthier future.

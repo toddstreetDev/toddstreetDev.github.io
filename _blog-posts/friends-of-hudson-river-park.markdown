@@ -2,11 +2,12 @@
 title: Friends of Hudson River Park
 cover-image: '/uploads/hudson-river-park.png'
 overview: true
+date: 2016-02-02
 ---
 
 A toddstreet team member welcomes spring by volunteering at a city park.
 
-When Caitlin Halle, one of our Project Managers, told us she wanted to take a day off to go to the park, she didn’t mean she wanted to catch up on her tan. This April, Caitlin volunteered at [Friends of Hudson River Park](http://www.hudsonriverpark.org/support-the-park){:target="_blank"} an independent, nonprofit organization dedicated to the completion, care, and enhancement of Hudson River Park.
+When Caitlin Halle, one of our Project Managers, told us she wanted to take a day off to go to the park, she didn’t mean she wanted to catch up on her tan. This April, Caitlin volunteered at [Friends of Hudson River Park](http://www.hudsonriverpark.org/support-the-park){:target="\_blank"} an independent, nonprofit organization dedicated to the completion, care, and enhancement of Hudson River Park.
 
 Caitlin, an Illinois native, relocated to New York five years ago, and immediately sought out the city’s green spaces for recreation and to remain connected with nature. Hudson River Park, with its wide boardwalks and pristine lawns became a personal favorite, and she hopes everyone can benefit from city parks like it.
 

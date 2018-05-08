@@ -4,7 +4,7 @@
 
 {% include title.html data=include.data %}
 
-{% assign posts = site.blog-posts | where_exp: 'item', 'item.published != false' %}
+{% assign posts = site.blog-posts | where_exp: 'item', 'item.published != false' | sort: 'date' | reverse %}
 
 {% if include.data.overview == true %}
 {% assign posts = posts | where: 'overview', 'true' %}
