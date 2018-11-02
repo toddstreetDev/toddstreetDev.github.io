@@ -889,6 +889,7 @@ font-size: 1.1em; }
 font-size: 1em;
 margin-top: 3.33333em; } }
 .section-title .section-description .quote-text {
+text-align: left;
 font-weight: 400;
 display: -webkit-box;
 display: -ms-flexbox;

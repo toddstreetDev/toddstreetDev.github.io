@@ -1,8 +1,9 @@
 ---
-title: Craig Hettche
+title: Fivel Rothberg
 date: 2017-09-25 10:29:00 -04:00
-position: 3
+position: 8
 role: Senior Executive Producer, Video
-image: "/uploads/craig-hettche.jpg"
+image: "/uploads/person.jpg"
 department: Creative Services
+published: false
 ---
