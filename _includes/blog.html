@@ -27,10 +27,10 @@
       <div class="post-full">
         <div class="post-text">{{post}}</div>
 
-        {% if post.images.size > 1 %}
+        {% if post.images.size > 0 %}
         <div class="post-images">
           {% for image in post.images %}
-            <div class="post-image" style="background-image: url({{site.url | append: site.baseurl}}{{image}})"></div>
+            <img class="post-image" src="{{site.url | append: site.baseurl}}{{image}}"/>
           {% endfor %}
         </div>
         {% endif %}
