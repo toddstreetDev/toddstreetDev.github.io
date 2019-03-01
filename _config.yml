@@ -2,6 +2,9 @@
 title: toddstreet | Marketing Communications Agency
 timezone: America/New_York
 collections:
+  articles:
+    title: Articles
+    output: false
   employees:
     title: Employees
     output: false
@@ -39,6 +42,12 @@ collections:
     title: work-categories
     output: false
 defaults:
+- scope:
+    path: ''
+    type: articles
+  values:
+    overview:
+    images:
 - scope:
     path: ''
     type: stats

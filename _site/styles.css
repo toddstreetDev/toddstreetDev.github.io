@@ -602,7 +602,7 @@ header #nav-logo {
 margin-right: 2em;
 padding: 0px; }
 header #nav-logo svg {
-height: 2.5em; }
+height: 2em; }
 header nav {
 -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
@@ -643,7 +643,7 @@ transition: opacity 0.25s;
         flex: 0 0 auto;
 color: #333;
 opacity: 0.3;
-font-size: 2em;
+font-size: 1.3em;
 padding: 0px 0.25em; }
 @media screen and (max-width: 1050px) {
 header .social-container .social {

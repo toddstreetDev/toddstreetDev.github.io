@@ -1,0 +1,8 @@
+<section id="articles">
+  {% assign articles = site.articles | where_exp: 'item', 'item.published != false' | sort: 'date' | reverse %}
+  {% for article in articles %}
+  <div class="article">
+    
+  </div>
+  {% endfor %}
+</section>
