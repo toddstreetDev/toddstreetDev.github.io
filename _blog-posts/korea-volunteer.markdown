@@ -2,6 +2,7 @@
 title: toddstreet ventures to Naju, Korea to volunteer at children’s orphanage
 cover-image: '/uploads/Kate_KoreaTrip_2-150x150.jpg'
 date: 2016-05-05
+published: false
 ---
 
 In June, our video coordinator Kate Moran participated in a month-long internship through SWS (Social Welfare Society, Inc.) in South Korea, volunteering with one of their affiliated orphanages, the Ehwa Infant Reception Center, in Naju, a small town in the South Jeolla Province of South Korea. The orphanage provides a loving home for nearly 50 young children, ranging from infancy to 5 years of age. Kate assisted in childcare responsibilities, including accompanying children on trips to the medical office.
