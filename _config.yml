@@ -1,5 +1,7 @@
 ---
 title: toddstreet | Marketing Communications Agency
+baseurl: ""
+url: www.toddstreet.com
 timezone: America/New_York
 collections:
   articles:
