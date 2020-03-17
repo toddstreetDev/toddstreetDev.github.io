@@ -13,5 +13,5 @@ images:
 - row:
   - file: "/uploads/netflix_frontier_sign.jpg"
   - file: "/uploads/netflix_woman_shooting.jpg"
-overview: 1
+overview: false
 ---
