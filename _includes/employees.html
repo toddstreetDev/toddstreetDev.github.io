@@ -1,6 +1,6 @@
 <section id="employees">
 
-  {% include title.html data=include.data %}
+  {% include title.html data=include.data.title %}
 
   <div id="inner-employees">
     {% assign departments = site.departments | sort: 'position'%}

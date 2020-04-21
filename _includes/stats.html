@@ -1,6 +1,6 @@
 <section id="stats">
-  {% include title.html data=include.data %}
-  <div id="inner-stats">
+  {% include title.html data=include.data.title %}
+  <div class="stats">
 
     {% assign stats = site.stats | where_exp: 'item', 'item.hide != true'| sort: 'position' %}
     {% for stat in stats %}

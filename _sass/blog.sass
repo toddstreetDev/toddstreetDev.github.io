@@ -1,6 +1,7 @@
 #blog
-  padding: 0px $paddingw $paddingh
-  .section-title
+  padding: $paddingh $paddingw
+  .title
+    padding-bottom: $paddingh
     i
       color: $red
   .post-container
@@ -82,10 +83,11 @@
       .post-preview
         display: none
   &.blog-overview
-    padding-bottom: 0px
-    .section-title
+    .title
       i
         color: $yellow
+    .button-wrapper
+      padding-top: $paddingh
     .button
       background: $yellow
     .post-container

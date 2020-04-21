@@ -2,7 +2,7 @@
 
 <section id="blog" {% if include.data.overview == true %}class="blog-overview"{% endif %}>
 
-{% include title.html data=include.data %}
+{% include title.html data=include.data.title %}
 
 {% assign posts = site.blog-posts | where_exp: 'item', 'item.published != false' | sort: 'date' | reverse %}
 

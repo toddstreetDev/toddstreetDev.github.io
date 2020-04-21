@@ -1,6 +1,6 @@
 <section id="clients">
-  {% include title.html data=include.data %}
-  <div id="inner-clients">
+  {% include title.html data=include.data.title %}
+  <div class="clients">
     {% assign clients = site.clients | where_exp: 'item', 'item.published !=false' | sort: 'position'%}
     {% for client in clients %}
 

@@ -1,6 +1,6 @@
 <section id="offerings">
-  {% include title.html data=include.data %}
-  <div id="inner-offerings">
+  {% include title.html data=include.data.title %}
+  <div class="offerings">
     {% assign offerings = site.offerings %}
     {% for offering in offerings %}
     <div class="offer-box">

@@ -3,11 +3,11 @@
   border-bottom: 1px solid $c100
   background-color: #fff
   position: relative
-  padding-bottom: $paddingh/4
-  .section-title
-    h1
-      i
-        color: $blue
+  padding: $paddingh 0px
+  .title
+    padding-bottom: $paddingh
+    i
+      color: $blue
   #employee-color-box
     position: absolute
     top: 0px
@@ -22,9 +22,10 @@
     .department
       display: flex
       flex-direction: row
-      padding: $paddingh/1.5 0px
-      &:first-child
-        padding-top: 0px
+      padding-bottom: $paddingh
+      &:last-child
+        padding-bottom: 0px
+
       .department-title
         flex: 0 0 330px
         text-align: right
@@ -37,7 +38,7 @@
         display: flex
         flex-direction: row
         flex-wrap: wrap
-        padding: 1em
+        padding: 0px 1em
         .employee
           flex: 0 0 $column4
           margin: 0px 0px 2em

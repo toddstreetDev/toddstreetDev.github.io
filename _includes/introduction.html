@@ -1,3 +1,7 @@
 <section id="introduction">
-{% include title.html data=include.data %}
+  {% include title.html data=include.data.title %}
+  
+  {% if include.data.description %}
+    {% include description.html data=include.data.description %}
+  {% endif %}
 </section>
