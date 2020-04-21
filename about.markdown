@@ -10,15 +10,17 @@ sections:
   site-map: true
   title: "We're All About <i>Engagement</i>"
   description: |
-    True engagement is what transforms an audience into something bigger, motivating them to think, feel and act. The catalyst to accomplish enduring results. As a Marketing Communications Agency, we create compelling content and design innovative solutions to engage audiences authentically across live and virtual platforms.
+    True engagement is what transforms an audience into something bigger, motivating them to think, feel and act. The catalyst to accomplish enduring results.
+
+    As a Marketing Communications Agency, we create compelling content and design innovative solutions to engage audiences authentically across live and virtual platforms.
 
     **We are creative storytellers, experience designers and producers, delivering:**
 
-    - Meaningful live and virtual events
-    - Impactful communication campaigns
-    - Training that elevates your team
+    - **Meaningful live and virtual events**
+    - **Impactful communication campaigns**
+    - **Training that elevates your team**
 
-    **Let us tell your story bigger, bolder and better than ever before.**
+    Let us tell your story bigger, bolder and better than ever before.
 
 - section: overview
   site-map: true
