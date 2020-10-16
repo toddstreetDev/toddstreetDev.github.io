@@ -1,0 +1,35 @@
+#gold-2020
+  //padding-bottom: $paddingh
+
+  .content
+    background: rgb(250,192,96)
+    background: linear-gradient(90deg, rgba(250,192,96,1) 0%, rgba(255,227,150,1) 100%)
+    padding: 50px
+
+  .inner-content
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    max-width: 1000px
+    margin: 0px auto
+
+  .description
+    flex: 1 1 50%
+    margin-right: 80px
+
+    img
+      width: 120px
+
+  .img
+    flex: 1 1 50%
+    img
+      width: 100%
+
+  @media screen and (max-width: $tablet)
+    .inner-content
+      flex-direction: column
+      text-align: center
+
+    .description
+      margin: 0px 0px 50px

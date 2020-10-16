@@ -1783,3 +1783,39 @@ border-left: none;
 border-top: 1px solid #2c6ebf;
 margin: .7em auto;
 width: 60vw; } }
+#gold-2020 .content {
+background: #fac060;
+background: -webkit-gradient(linear, left top, right top, from(#fac060), to(#ffe396));
+background: linear-gradient(90deg, #fac060 0%, #ffe396 100%);
+padding: 50px; }
+#gold-2020 .inner-content {
+display: -webkit-box;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+        flex-direction: row;
+-webkit-box-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+        justify-content: center;
+max-width: 1000px;
+margin: 0px auto; }
+#gold-2020 .description {
+-webkit-box-flex: 1;
+        flex: 1 1 50%;
+margin-right: 80px; }
+#gold-2020 .description img {
+width: 120px; }
+#gold-2020 .img {
+-webkit-box-flex: 1;
+        flex: 1 1 50%; }
+#gold-2020 .img img {
+width: 100%; }
+@media screen and (max-width: 800px) {
+#gold-2020 .inner-content {
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+        flex-direction: column;
+text-align: center; }
+#gold-2020 .description {
+margin: 0px 0px 50px; } }
