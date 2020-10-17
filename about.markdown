@@ -26,7 +26,7 @@ sections:
   site-map: false
   header: Gold Winners in the Digital Initiative for Non-Consumers Category.
   description: We’re so proud to have been honored by our industry peers in the 2020 Medical, Marketing + Media (MM+M) Awards, winning GOLD in the Digital Initiative for Non-Consumers Category.
-  image: MM&M_Award_Visual.jpg
+  image: MM&M_Award_Visual.png
 
 - section: overview
   site-map: true
